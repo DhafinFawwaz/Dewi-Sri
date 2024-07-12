@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page20
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 964b7ec895fa8de4b8d2ec71076717aa, type: 3}
+    - {fileID: 2800000, guid: 6b0b088ba5cd10e49ba55a68a1c724d0, type: 3}
+    - {fileID: 2800000, guid: 484f4d8641886614e909d1c4522bde10, type: 3}
+    - {fileID: 2800000, guid: 5b1ce9621c6db9a41bd1fd310fca374a, type: 3}
+    - {fileID: 2800000, guid: f00392c466557d24ba1832f8b6638f54, type: 3}
+    - {fileID: 2800000, guid: 577ab3231c8063944b76878ee1a708ce, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 5b1ce9621c6db9a41bd1fd310fca374a, type: 3}
+  - {fileID: 21300000, guid: 577ab3231c8063944b76878ee1a708ce, type: 3}
+  - {fileID: 21300000, guid: f00392c466557d24ba1832f8b6638f54, type: 3}
+  - {fileID: 21300000, guid: 484f4d8641886614e909d1c4522bde10, type: 3}
+  - {fileID: 21300000, guid: 964b7ec895fa8de4b8d2ec71076717aa, type: 3}
+  - {fileID: 21300000, guid: 6b0b088ba5cd10e49ba55a68a1c724d0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page20_0005_Sparkle-1
+  - Page20_0007_BACKGROUND
+  - Page20_0006_Dewi-Sri
+  - Page20_0004_Sparkle-2
+  - Page20_0002_Sparkle-4
+  - Page20_0003_Sparkle-3
+  m_RenderDataMap: {}
+  m_Tag: Page20
+  m_IsVariant: 0

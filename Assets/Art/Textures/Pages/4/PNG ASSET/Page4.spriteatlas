@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page4
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 9976e44fb84852f41b10fa2aa37b3f0b, type: 3}
+    - {fileID: 2800000, guid: 3b1013dd8dae56c44b096cfcd2f955a8, type: 3}
+    - {fileID: 2800000, guid: 947dfb550516739499a84dffd6bd3c4f, type: 3}
+    - {fileID: 2800000, guid: bf9163bde62d5a148a46913ad7ab81bb, type: 3}
+    - {fileID: 2800000, guid: aa24826f9f0a1f44c8fbce6a49c373ff, type: 3}
+    - {fileID: 2800000, guid: a09a5c5fabd38f34b9cc2031d5892760, type: 3}
+    - {fileID: 2800000, guid: e05e36f89aa82da4786b06967f3ad22e, type: 3}
+    - {fileID: 2800000, guid: d0021f3b43c2f6d46880b20236d46b09, type: 3}
+    - {fileID: 2800000, guid: 2bd64c24923b94c418fc561dc7e0cabd, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 2bd64c24923b94c418fc561dc7e0cabd, type: 3}
+  - {fileID: 21300000, guid: 947dfb550516739499a84dffd6bd3c4f, type: 3}
+  - {fileID: 1424524360, guid: e05e36f89aa82da4786b06967f3ad22e, type: 3}
+  - {fileID: 992910305, guid: e05e36f89aa82da4786b06967f3ad22e, type: 3}
+  - {fileID: 21300000, guid: d0021f3b43c2f6d46880b20236d46b09, type: 3}
+  - {fileID: 21300000, guid: bf9163bde62d5a148a46913ad7ab81bb, type: 3}
+  - {fileID: 21300000, guid: 3b1013dd8dae56c44b096cfcd2f955a8, type: 3}
+  - {fileID: 21300000, guid: 9976e44fb84852f41b10fa2aa37b3f0b, type: 3}
+  - {fileID: 21300000, guid: a09a5c5fabd38f34b9cc2031d5892760, type: 3}
+  - {fileID: 21300000, guid: aa24826f9f0a1f44c8fbce6a49c373ff, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page-04_0009_Pemandangan-Malam
+  - Page-04_0002_Anak
+  - Page-04_0007_Rumput-(Gerak)_0
+  - Page-04_0007_Rumput-(Gerak)_1
+  - Page-04_0008_Daun-(Gerak)
+  - Page-04_0003_Bayangan-(Multiply)
+  - Page-04_0001_Kipas
+  - Page-04_0000_Lighting-(Overlay)
+  - Page-04_0005_Background-(Kamar)
+  - Page-04_0004_PROPS
+  m_RenderDataMap: {}
+  m_Tag: Page4
+  m_IsVariant: 0

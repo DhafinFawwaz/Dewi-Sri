@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page17
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 9ecaa15fbc956894bb58ef637831be53, type: 3}
+    - {fileID: 2800000, guid: 8f05c1b502481f44b826a4650a490d48, type: 3}
+    - {fileID: 2800000, guid: c00c2bb74ebd4784281a7440e57bae46, type: 3}
+    - {fileID: 2800000, guid: 398412951925f35489587c1589c02d38, type: 3}
+    - {fileID: 2800000, guid: 852210f7fec84e24d8b6cae2ea4a135a, type: 3}
+    - {fileID: 2800000, guid: af322e082b2093d40b1219a9bc5b2832, type: 3}
+    - {fileID: 2800000, guid: 8f5a1257ae5363c45a43643450a08bbc, type: 3}
+    - {fileID: 2800000, guid: b735a526eec04a348a2e9bab296155d2, type: 3}
+    - {fileID: 2800000, guid: f9a5e13d04a6a0d4b8a91da51793282f, type: 3}
+    - {fileID: 2800000, guid: 7c60c7ca52560a542a8ef0f12bcf70d2, type: 3}
+    - {fileID: 2800000, guid: c12aeace6cbe106489843afa7a9ea93d, type: 3}
+    - {fileID: 2800000, guid: 388c109b72a128f49a33ba89c81758ce, type: 3}
+    - {fileID: 2800000, guid: 705e236a2eb35724ea8d34ab7c40a86e, type: 3}
+    - {fileID: 2800000, guid: c59e14a6a6bb5dc4396497c112d711cd, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 398412951925f35489587c1589c02d38, type: 3}
+  - {fileID: 21300000, guid: 8f05c1b502481f44b826a4650a490d48, type: 3}
+  - {fileID: 21300000, guid: b735a526eec04a348a2e9bab296155d2, type: 3}
+  - {fileID: 21300000, guid: c59e14a6a6bb5dc4396497c112d711cd, type: 3}
+  - {fileID: 21300000, guid: 8f5a1257ae5363c45a43643450a08bbc, type: 3}
+  - {fileID: 21300000, guid: c00c2bb74ebd4784281a7440e57bae46, type: 3}
+  - {fileID: 21300000, guid: 852210f7fec84e24d8b6cae2ea4a135a, type: 3}
+  - {fileID: 21300000, guid: af322e082b2093d40b1219a9bc5b2832, type: 3}
+  - {fileID: 21300000, guid: 705e236a2eb35724ea8d34ab7c40a86e, type: 3}
+  - {fileID: 21300000, guid: 7c60c7ca52560a542a8ef0f12bcf70d2, type: 3}
+  - {fileID: 21300000, guid: 388c109b72a128f49a33ba89c81758ce, type: 3}
+  - {fileID: 21300000, guid: f9a5e13d04a6a0d4b8a91da51793282f, type: 3}
+  - {fileID: 21300000, guid: c12aeace6cbe106489843afa7a9ea93d, type: 3}
+  - {fileID: 21300000, guid: 9ecaa15fbc956894bb58ef637831be53, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page17_0003_Palem-3-(gerak)
+  - Page17_0001_-palem-1-(Gerak)
+  - Page17_0007_Semak-3-(Goyang)
+  - Page17_0013_Air
+  - Page17_0006_Semak-2-(Goyang)
+  - Page17_0002_Palem-2-(gerak)
+  - Page17_0004_Palem-4-(Gerak)
+  - Page17_0005_Semak-1-(Goyang)
+  - Page17_0012_Dalem-Goa
+  - Page17_0009_Anak
+  - Page17_0011_Goa-+Ground
+  - Page17_0008_Semak-4-(Goyang)
+  - Page17_0010_Kerbau
+  - Page17_0000_Batu-FG
+  m_RenderDataMap: {}
+  m_Tag: Page17
+  m_IsVariant: 0

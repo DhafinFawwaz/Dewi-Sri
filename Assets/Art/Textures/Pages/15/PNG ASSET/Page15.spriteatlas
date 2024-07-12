@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page15
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 21533209ccb178a4da4b20e133309faf, type: 3}
+    - {fileID: 2800000, guid: 483933fc553a95549b35c951547b973c, type: 3}
+    - {fileID: 2800000, guid: f19a9c88aa2de244eac56e7a39de395e, type: 3}
+    - {fileID: 2800000, guid: fe39fe321398d204f875f86d74bb6b8f, type: 3}
+    - {fileID: 2800000, guid: d306e30eb92090d4ab3fe91bb9b78a44, type: 3}
+    - {fileID: 2800000, guid: 93b734aea0407354fabb05108f400d7c, type: 3}
+    - {fileID: 2800000, guid: 4e948a6969816de4495e644367f0c4e2, type: 3}
+    - {fileID: 2800000, guid: ab1570ee989f7444e9240343fe16d199, type: 3}
+    - {fileID: 2800000, guid: 072ada56221036e4cacdce204ede36dc, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: fe39fe321398d204f875f86d74bb6b8f, type: 3}
+  - {fileID: 21300000, guid: 072ada56221036e4cacdce204ede36dc, type: 3}
+  - {fileID: 21300000, guid: f19a9c88aa2de244eac56e7a39de395e, type: 3}
+  - {fileID: 21300000, guid: 21533209ccb178a4da4b20e133309faf, type: 3}
+  - {fileID: 21300000, guid: 4e948a6969816de4495e644367f0c4e2, type: 3}
+  - {fileID: 21300000, guid: 483933fc553a95549b35c951547b973c, type: 3}
+  - {fileID: 21300000, guid: d306e30eb92090d4ab3fe91bb9b78a44, type: 3}
+  - {fileID: 21300000, guid: 93b734aea0407354fabb05108f400d7c, type: 3}
+  - {fileID: 21300000, guid: ab1570ee989f7444e9240343fe16d199, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page15_0005_Tolong!!!
+  - Page15_0011_Background
+  - Page15_0004_Efek-kerbau-cemas
+  - Page15_0001_Pohon-Foreground
+  - Page15_0009_Ground
+  - Page15_0003_Asri
+  - Page15_0007_Badan-Kerbau
+  - Page15_0008_Semak-+-Bebatuan
+  - Page15_0010_Sungai
+  m_RenderDataMap: {}
+  m_Tag: Page15
+  m_IsVariant: 0

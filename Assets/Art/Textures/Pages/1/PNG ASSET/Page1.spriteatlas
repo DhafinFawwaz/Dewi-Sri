@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page1
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: eb8ce4a695424c047b60ebd201a55624, type: 3}
+    - {fileID: 2800000, guid: 9e26e8e4fe531604ca8861a171b55ffc, type: 3}
+    - {fileID: 2800000, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+    - {fileID: 2800000, guid: eea9a6c1dcd6d744db6aaeb3fab6cb03, type: 3}
+    - {fileID: 2800000, guid: 425ec22b19a69dc4898fda995cd08059, type: 3}
+    - {fileID: 2800000, guid: 7d746b236000c0744817eebcf8209859, type: 3}
+    - {fileID: 2800000, guid: 509f93ec50852ae40bed58fbde229ed1, type: 3}
+    - {fileID: 2800000, guid: 4a62c91da456a614bad0f66d1facba47, type: 3}
+    - {fileID: 2800000, guid: 3adcfb18775d6144797b32836e28757b, type: 3}
+    - {fileID: 2800000, guid: db1123ca450f9894facefd246818ff2c, type: 3}
+    - {fileID: 2800000, guid: 110713413778fdc46a3210263e3757e6, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 110713413778fdc46a3210263e3757e6, type: 3}
+  - {fileID: 21300000, guid: eea9a6c1dcd6d744db6aaeb3fab6cb03, type: 3}
+  - {fileID: 21300000, guid: 7d746b236000c0744817eebcf8209859, type: 3}
+  - {fileID: 21300000, guid: 9e26e8e4fe531604ca8861a171b55ffc, type: 3}
+  - {fileID: 1681351524, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: 947522631, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: 1571538868, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: -1927315802, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: 1755850931, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: 785967571, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: -568981370, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: -1514897333, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: -1275110956, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: -341218623, guid: 042375a52d02376418bd53fd2dbe80c2, type: 3}
+  - {fileID: 21300000, guid: eb8ce4a695424c047b60ebd201a55624, type: 3}
+  - {fileID: 21300000, guid: 3adcfb18775d6144797b32836e28757b, type: 3}
+  - {fileID: 21300000, guid: db1123ca450f9894facefd246818ff2c, type: 3}
+  - {fileID: 21300000, guid: 425ec22b19a69dc4898fda995cd08059, type: 3}
+  - {fileID: 21300000, guid: 509f93ec50852ae40bed58fbde229ed1, type: 3}
+  - {fileID: 21300000, guid: 4a62c91da456a614bad0f66d1facba47, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - nenek
+  - page-01_0003_Foreground
+  - page-01_0005_Pohon-Kelapa-2
+  - page-01_0001_Padi-(gerak)
+  - page-01_0002_Daun-padi-(gerak)_10
+  - page-01_0002_Daun-padi-(gerak)_8
+  - page-01_0002_Daun-padi-(gerak)_9
+  - page-01_0002_Daun-padi-(gerak)_2
+  - page-01_0002_Daun-padi-(gerak)_3
+  - page-01_0002_Daun-padi-(gerak)_0
+  - page-01_0002_Daun-padi-(gerak)_6
+  - page-01_0002_Daun-padi-(gerak)_7
+  - page-01_0002_Daun-padi-(gerak)_4
+  - page-01_0002_Daun-padi-(gerak)_5
+  - page-01_0000_Lighting-(OVERLAY)
+  - page-01_0008_Awan-(gerak)
+  - page-01_0009_Langit-(Background)
+  - page-01_0004_Pohon-Kelapa-1
+  - page-01_0006_Pohon-Kelapa-3
+  - page-01_0007_Sawah-(Midground)
+  m_RenderDataMap: {}
+  m_Tag: Page1
+  m_IsVariant: 0

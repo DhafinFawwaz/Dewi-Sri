@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page7
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 8b15dd15b2634144199c51031a871f9f, type: 3}
+    - {fileID: 2800000, guid: 916c0cebacfc71d4eb7dbf3173800c45, type: 3}
+    - {fileID: 2800000, guid: 317fc362f9389ed49a21680831e80504, type: 3}
+    - {fileID: 2800000, guid: 2ecbbc7550faad748bb299e0295c3b57, type: 3}
+    - {fileID: 2800000, guid: f41ba315ef67fe441825fce394364a57, type: 3}
+    - {fileID: 2800000, guid: 0563c8f8ded11eb4dbd50312555d750e, type: 3}
+    - {fileID: 2800000, guid: 97dde73d609af8845ae3e562fd9a3c1c, type: 3}
+    - {fileID: 2800000, guid: 5505ec5ac02c7cc4fb1a339de50bccd2, type: 3}
+    - {fileID: 2800000, guid: 512cefa03f1b2eb43ba871ff637b4de7, type: 3}
+    - {fileID: 2800000, guid: d9c905ff88b8d8047bd246a98b922684, type: 3}
+    - {fileID: 2800000, guid: 2f658326e825ff047a208514d1a9af45, type: 3}
+    - {fileID: 2800000, guid: 7703d7a6ef0ec3840bf0921baeb4565f, type: 3}
+    - {fileID: 2800000, guid: 9bf32820bd3b86f4891fc106ae9398c1, type: 3}
+    - {fileID: 2800000, guid: c6cf1a76e5ee48b46aba0cf9234690ac, type: 3}
+    - {fileID: 2800000, guid: 062c7101a72013c498502c4aae25a7e4, type: 3}
+    - {fileID: 2800000, guid: cb775e65aa835984798f8f927fc9b3d8, type: 3}
+    - {fileID: 2800000, guid: 608f6521c4ea68a4cb77c27a0d081a58, type: 3}
+    - {fileID: 2800000, guid: 60e4a31e9f4d26e419b682d5844f73ca, type: 3}
+    - {fileID: 2800000, guid: 8577a2d7b80e98e48bc053ad31a615dc, type: 3}
+    - {fileID: 2800000, guid: 2d75fe7f902e11b47bfd15c3b30eddaf, type: 3}
+    - {fileID: 2800000, guid: a401ac5041098f44d816aa9bf9411737, type: 3}
+    - {fileID: 2800000, guid: 4d858e08059e16e4a8b4fe85e42cc6c4, type: 3}
+    - {fileID: 2800000, guid: 1682f39736f58494ea54b5b4fc137a9c, type: 3}
+    - {fileID: 2800000, guid: 63029eaafb0ee5c48b237f537473bccd, type: 3}
+    - {fileID: 2800000, guid: 9f39c7809b6b18949a9827320691912d, type: 3}
+    - {fileID: 2800000, guid: b99d96a5383611e468f9b35f26962c75, type: 3}
+    - {fileID: 2800000, guid: e082b9bb28f113b4c81e031d6d4b4edf, type: 3}
+    - {fileID: 2800000, guid: f7485e9e9b3bf5c4191811dbb43d5c64, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9bf32820bd3b86f4891fc106ae9398c1, type: 3}
+  - {fileID: 21300000, guid: a401ac5041098f44d816aa9bf9411737, type: 3}
+  - {fileID: 21300000, guid: 9f39c7809b6b18949a9827320691912d, type: 3}
+  - {fileID: 21300000, guid: 512cefa03f1b2eb43ba871ff637b4de7, type: 3}
+  - {fileID: 21300000, guid: 062c7101a72013c498502c4aae25a7e4, type: 3}
+  - {fileID: 21300000, guid: 608f6521c4ea68a4cb77c27a0d081a58, type: 3}
+  - {fileID: 21300000, guid: 317fc362f9389ed49a21680831e80504, type: 3}
+  - {fileID: 21300000, guid: f41ba315ef67fe441825fce394364a57, type: 3}
+  - {fileID: 21300000, guid: 8b15dd15b2634144199c51031a871f9f, type: 3}
+  - {fileID: 21300000, guid: cb775e65aa835984798f8f927fc9b3d8, type: 3}
+  - {fileID: 21300000, guid: 2ecbbc7550faad748bb299e0295c3b57, type: 3}
+  - {fileID: 21300000, guid: b99d96a5383611e468f9b35f26962c75, type: 3}
+  - {fileID: 21300000, guid: 2f658326e825ff047a208514d1a9af45, type: 3}
+  - {fileID: 21300000, guid: c6cf1a76e5ee48b46aba0cf9234690ac, type: 3}
+  - {fileID: 21300000, guid: 7703d7a6ef0ec3840bf0921baeb4565f, type: 3}
+  - {fileID: 21300000, guid: 1682f39736f58494ea54b5b4fc137a9c, type: 3}
+  - {fileID: 21300000, guid: 8577a2d7b80e98e48bc053ad31a615dc, type: 3}
+  - {fileID: 21300000, guid: 4d858e08059e16e4a8b4fe85e42cc6c4, type: 3}
+  - {fileID: 21300000, guid: 0563c8f8ded11eb4dbd50312555d750e, type: 3}
+  - {fileID: 21300000, guid: 5505ec5ac02c7cc4fb1a339de50bccd2, type: 3}
+  - {fileID: 21300000, guid: 63029eaafb0ee5c48b237f537473bccd, type: 3}
+  - {fileID: 21300000, guid: e082b9bb28f113b4c81e031d6d4b4edf, type: 3}
+  - {fileID: 21300000, guid: 916c0cebacfc71d4eb7dbf3173800c45, type: 3}
+  - {fileID: 21300000, guid: 97dde73d609af8845ae3e562fd9a3c1c, type: 3}
+  - {fileID: 21300000, guid: 60e4a31e9f4d26e419b682d5844f73ca, type: 3}
+  - {fileID: 21300000, guid: f7485e9e9b3bf5c4191811dbb43d5c64, type: 3}
+  - {fileID: 21300000, guid: 2d75fe7f902e11b47bfd15c3b30eddaf, type: 3}
+  - {fileID: 21300000, guid: d9c905ff88b8d8047bd246a98b922684, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page-07_0001s_0004_Tas-Depan
+  - Page-07_0002_Botol-Minum
+  - Page-07_0006_Senter
+  - Page-07_0001s_0000_Jaring-(tas)
+  - Page-07_0001s_0006_Hint-Senter
+  - Page-07_0001s_0008_Hint-Gunting
+  - Page-07_0000s_0001_Item-5-(salah)
+  - Page-07_0000s_0003_Item-3-(salah)
+  - Page-07_0000_Gunting
+  - Page-07_0001s_0007_Gunting-(tas)
+  - Page-07_0000s_0002_Item-4-(salah)
+  - Page-07_0007_Senter-+-Bayangan
+  - Page-07_0001s_0002_Botol-Minum-(tas)
+  - Page-07_0001s_0005_Senter-(tas)
+  - Page-07_0001s_0003_Hint-Botol-Minum
+  - Page-07_0010_Text-Bubble
+  - Page-07_0001s_0010_Hint-Bekal
+  - Page-07_0003_Bayangan-+-Bayangan
+  - Page-07_0000s_0004_Item-2-(-Salah)
+  - Page-07_0001_Gunting-+-Bayangan
+  - Page-07_0005_Kotak-Makan-+-Bayangan
+  - Page-07_0008_Jaring
+  - Page-07_0000s_0000_Item-6-(salah)
+  - Page-07_0000s_0005_Item-1-(salah)
+  - Page-07_0001s_0009_Bekal-(tas)
+  - Page-07_0009_Meja
+  - Page-07_0001s_0011_Tas-Belakang
+  - Page-07_0001s_0001_Hint-Jaring
+  m_RenderDataMap: {}
+  m_Tag: Page7
+  m_IsVariant: 0
