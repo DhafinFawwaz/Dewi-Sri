@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page19
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 77457bd03b0741047aa5f0fe89dc3f15, type: 3}
+    - {fileID: 2800000, guid: a196558e6e84dc344b723b33524f4228, type: 3}
+    - {fileID: 2800000, guid: e9d4b683e0e509d42ac5a8f3788a5d11, type: 3}
+    - {fileID: 2800000, guid: 9f90c4cc204eabe4e9f4e800ec710e0a, type: 3}
+    - {fileID: 2800000, guid: a271103f8fe1095428840a107c32c4fa, type: 3}
+    - {fileID: 2800000, guid: d40a6d015f521d94cbcc9c0b876b34ea, type: 3}
+    - {fileID: 2800000, guid: 531f4ab1cc3a2fe408a8c9ac1f99a0bf, type: 3}
+    - {fileID: 2800000, guid: a878433596eecc84dbdca946f3f8bf75, type: 3}
+    - {fileID: 2800000, guid: 4e625753e9757e845b00a69ce019dc30, type: 3}
+    - {fileID: 2800000, guid: f4f2dbf40912c6a448404357f2acb607, type: 3}
+    - {fileID: 2800000, guid: 45c8d3dc04e341142b154ec166f5e6f3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 77457bd03b0741047aa5f0fe89dc3f15, type: 3}
+  - {fileID: 21300000, guid: d40a6d015f521d94cbcc9c0b876b34ea, type: 3}
+  - {fileID: 21300000, guid: 531f4ab1cc3a2fe408a8c9ac1f99a0bf, type: 3}
+  - {fileID: 21300000, guid: 4e625753e9757e845b00a69ce019dc30, type: 3}
+  - {fileID: 21300000, guid: e9d4b683e0e509d42ac5a8f3788a5d11, type: 3}
+  - {fileID: 21300000, guid: f4f2dbf40912c6a448404357f2acb607, type: 3}
+  - {fileID: 21300000, guid: a878433596eecc84dbdca946f3f8bf75, type: 3}
+  - {fileID: 21300000, guid: 9f90c4cc204eabe4e9f4e800ec710e0a, type: 3}
+  - {fileID: 21300000, guid: 45c8d3dc04e341142b154ec166f5e6f3, type: 3}
+  - {fileID: 21300000, guid: a196558e6e84dc344b723b33524f4228, type: 3}
+  - {fileID: 21300000, guid: a271103f8fe1095428840a107c32c4fa, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page19_0000_Ilalang-(goyang)
+  - Page19_0005_Lighting-(Overlay)
+  - Page19_0006_Cahaya-Bokeh
+  - Page19_0008_GOA
+  - Page19_0002_Jerami
+  - Page19_0009_Air
+  - Page19_0007_Patung-1
+  - Page19_0003_Patung-2-(FG)
+  - Page19_0010_Layer-48
+  - Page19_0001_Asri-&-Kerbau
+  - Page19_0004_Shaddow-(Overlay)
+  m_RenderDataMap: {}
+  m_Tag: Page19
+  m_IsVariant: 0

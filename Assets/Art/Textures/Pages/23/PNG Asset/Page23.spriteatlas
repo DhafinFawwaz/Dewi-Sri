@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page23
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 16499a1f2f1044144a5e2b07bdcea185, type: 3}
+    - {fileID: 2800000, guid: aad34d5efdb191f4b9c91865ac328e60, type: 3}
+    - {fileID: 2800000, guid: 78c6aa0bc48e7894fa296a86b59560f3, type: 3}
+    - {fileID: 2800000, guid: e90669937cbe3f44bafa8a2b1f3e2c5c, type: 3}
+    - {fileID: 2800000, guid: b79a3ae809cfdd34e8c7272e8434c1ac, type: 3}
+    - {fileID: 2800000, guid: 081bd2f932c22d44d92402c425e4aace, type: 3}
+    - {fileID: 2800000, guid: 6989325a2ab48ac4898ff2362df683f2, type: 3}
+    - {fileID: 2800000, guid: 58c1c0420115dd24ab57a400e5b711f5, type: 3}
+    - {fileID: 2800000, guid: 7b96265e716b5d14c801af55b307b441, type: 3}
+    - {fileID: 2800000, guid: 08ea2d29edf4e144690d4dc00e74da79, type: 3}
+    - {fileID: 2800000, guid: fb40c2912ccdbe94098ec157f539b964, type: 3}
+    - {fileID: 2800000, guid: 3193ad901073cfa40bc0d0555b4ef0f5, type: 3}
+    - {fileID: 2800000, guid: 8159c8abf05d15d41bb38cfc67637628, type: 3}
+    - {fileID: 2800000, guid: 103e8e23ffe3f59438d39a94baa63a87, type: 3}
+    - {fileID: 2800000, guid: e9c1bc3e9dab39e4594dc4bb40cc55a9, type: 3}
+    - {fileID: 2800000, guid: 2ecaff52131dbbd42b2c7b2681313836, type: 3}
+    - {fileID: 2800000, guid: f2f30eaa48fd7c542a540e4a78871e1d, type: 3}
+    - {fileID: 2800000, guid: 82aee5e24a37b2a4892bfe24b409e676, type: 3}
+    - {fileID: 2800000, guid: c98edb6af3aaaad419ad18ef693a32aa, type: 3}
+    - {fileID: 2800000, guid: bc89a6e2af228bd438754289b3d1dd4e, type: 3}
+    - {fileID: 2800000, guid: 563ecdb99b94c9f4388c2c2b1f5d3b3f, type: 3}
+    - {fileID: 2800000, guid: bfcd3ea13a0779449a8028b65c2e2e8e, type: 3}
+    - {fileID: 2800000, guid: 109c8f85178abcc40a5c0367fba271c3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3193ad901073cfa40bc0d0555b4ef0f5, type: 3}
+  - {fileID: 21300000, guid: fb40c2912ccdbe94098ec157f539b964, type: 3}
+  - {fileID: 21300000, guid: bfcd3ea13a0779449a8028b65c2e2e8e, type: 3}
+  - {fileID: 21300000, guid: 58c1c0420115dd24ab57a400e5b711f5, type: 3}
+  - {fileID: 21300000, guid: 2ecaff52131dbbd42b2c7b2681313836, type: 3}
+  - {fileID: 21300000, guid: 82aee5e24a37b2a4892bfe24b409e676, type: 3}
+  - {fileID: 21300000, guid: bc89a6e2af228bd438754289b3d1dd4e, type: 3}
+  - {fileID: 21300000, guid: 103e8e23ffe3f59438d39a94baa63a87, type: 3}
+  - {fileID: 21300000, guid: e90669937cbe3f44bafa8a2b1f3e2c5c, type: 3}
+  - {fileID: 21300000, guid: 109c8f85178abcc40a5c0367fba271c3, type: 3}
+  - {fileID: 21300000, guid: b79a3ae809cfdd34e8c7272e8434c1ac, type: 3}
+  - {fileID: 21300000, guid: 08ea2d29edf4e144690d4dc00e74da79, type: 3}
+  - {fileID: 21300000, guid: 563ecdb99b94c9f4388c2c2b1f5d3b3f, type: 3}
+  - {fileID: 21300000, guid: 081bd2f932c22d44d92402c425e4aace, type: 3}
+  - {fileID: 21300000, guid: 6989325a2ab48ac4898ff2362df683f2, type: 3}
+  - {fileID: 21300000, guid: c98edb6af3aaaad419ad18ef693a32aa, type: 3}
+  - {fileID: 21300000, guid: f2f30eaa48fd7c542a540e4a78871e1d, type: 3}
+  - {fileID: 21300000, guid: 78c6aa0bc48e7894fa296a86b59560f3, type: 3}
+  - {fileID: 21300000, guid: 8159c8abf05d15d41bb38cfc67637628, type: 3}
+  - {fileID: 21300000, guid: e9c1bc3e9dab39e4594dc4bb40cc55a9, type: 3}
+  - {fileID: 21300000, guid: 7b96265e716b5d14c801af55b307b441, type: 3}
+  - {fileID: 21300000, guid: aad34d5efdb191f4b9c91865ac328e60, type: 3}
+  - {fileID: 21300000, guid: 16499a1f2f1044144a5e2b07bdcea185, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page23_0011_Apel
+  - Page23_0010_Efek-genangan-air
+  - Page23_0021_Lingkaran-kiri-bawah
+  - Page23_0007_Garpu
+  - Page23_0015_Makanan-sisa
+  - Page23_0017_Sampah-makanan
+  - Page23_0019_Roti-basi
+  - Page23_0013_Lingkaran-kanan-atas
+  - Page23_0003_Dewi-SRI
+  - Page23_0022_BG
+  - Page23_0004_Sayap
+  - Page23_0009_LINGKARAN-kiri-atas
+  - Page23_0020_Semangka
+  - Page23_0005_Rambut
+  - Page23_0006_Nasi
+  - Page23_0018_Lingkaran-kanan-bawah
+  - Page23_0016_Efek-bau
+  - Page23_0002_Selendang-depan
+  - Page23_0012_Air
+  - Page23_0014_Gentong
+  - Page23_0008_Piring
+  - Page23_0001_Tangisan-air-mata
+  - Page23_0000_EFEK-BIRU-
+  m_RenderDataMap: {}
+  m_Tag: Page23
+  m_IsVariant: 0

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Settings
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 6291626b288b91943a808d6340789392, type: 3}
+    - {fileID: 2800000, guid: 1935750a0f0cb8042b4d81882a0fff8f, type: 3}
+    - {fileID: 2800000, guid: bb50d6573e547784d96325a17db67415, type: 3}
+    - {fileID: 2800000, guid: 55ad020073b7b9148a89645013e39406, type: 3}
+    - {fileID: 2800000, guid: 9ca85126232abd041a872a75cdd33ced, type: 3}
+    - {fileID: 2800000, guid: 63965e9376c96d0479a9de1bc4c76b4b, type: 3}
+    - {fileID: 2800000, guid: e04a60bba4faab7469a901ebdff6b85a, type: 3}
+    - {fileID: 2800000, guid: 6cb93485b9e772b418fc06681a0a5a81, type: 3}
+    - {fileID: 2800000, guid: 98d01da78dcf36741b19f92c6cb4a433, type: 3}
+    - {fileID: 2800000, guid: 882750551a9eb9f41b63994756f92ce2, type: 3}
+    - {fileID: 2800000, guid: 18ff698e3a6276a459a84780974e88a2, type: 3}
+    - {fileID: 2800000, guid: a9b4b4355ad11be49b8d9714f54a6ddc, type: 3}
+    - {fileID: 2800000, guid: 3acd0f40482d69e4396da85945466160, type: 3}
+    - {fileID: 2800000, guid: c4746e2b0bd15f14b9c1aa031a0c7a6f, type: 3}
+    - {fileID: 2800000, guid: 30d98a9902a2fae4dbdc6e4f114a16f9, type: 3}
+    - {fileID: 2800000, guid: ad3f528bd9d982a42aea1d090b9349bc, type: 3}
+    - {fileID: 2800000, guid: 8cbf032e36b99444981473018aed26c6, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 55ad020073b7b9148a89645013e39406, type: 3}
+  - {fileID: 21300000, guid: 3acd0f40482d69e4396da85945466160, type: 3}
+  - {fileID: 21300000, guid: 63965e9376c96d0479a9de1bc4c76b4b, type: 3}
+  - {fileID: 21300000, guid: a9b4b4355ad11be49b8d9714f54a6ddc, type: 3}
+  - {fileID: 21300000, guid: 882750551a9eb9f41b63994756f92ce2, type: 3}
+  - {fileID: 21300000, guid: 6cb93485b9e772b418fc06681a0a5a81, type: 3}
+  - {fileID: 21300000, guid: 9ca85126232abd041a872a75cdd33ced, type: 3}
+  - {fileID: 21300000, guid: bb50d6573e547784d96325a17db67415, type: 3}
+  - {fileID: 21300000, guid: 98d01da78dcf36741b19f92c6cb4a433, type: 3}
+  - {fileID: 21300000, guid: 30d98a9902a2fae4dbdc6e4f114a16f9, type: 3}
+  - {fileID: 21300000, guid: 1935750a0f0cb8042b4d81882a0fff8f, type: 3}
+  - {fileID: 21300000, guid: c4746e2b0bd15f14b9c1aa031a0c7a6f, type: 3}
+  - {fileID: 21300000, guid: 6291626b288b91943a808d6340789392, type: 3}
+  - {fileID: 21300000, guid: ad3f528bd9d982a42aea1d090b9349bc, type: 3}
+  - {fileID: 21300000, guid: e04a60bba4faab7469a901ebdff6b85a, type: 3}
+  - {fileID: 21300000, guid: 8cbf032e36b99444981473018aed26c6, type: 3}
+  - {fileID: 21300000, guid: 18ff698e3a6276a459a84780974e88a2, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SETTING_0000s_0002_Empty
+  - SETTING_0002s_0003_Empty-(ON-OFF)
+  - SETTING_0001s_0000_Moveable-2
+  - SETTING_0002s_0002_Half-(on)
+  - SETTING_0002s_0000_Moveable-On-Off
+  - SETTING_0001s_0002_Empty-2
+  - SETTING_0001_NARASI-(ON)
+  - SETTING_0000s_0001_Full-1
+  - SETTING_0002_BGM-(On)
+  - SETTING_0004_Exit
+  - SETTING_0000s_0000_Moveable-1
+  - SETTING_0003_BGM-(OFF)
+  - SETTING_0000_NARASI-(OFF)
+  - SETTING_0005_OK
+  - SETTING_0001s_0001_Full-2
+  - SETTING_0006_SETTING-BAR
+  - SETTING_0002s_0001_Full-(off)
+  m_RenderDataMap: {}
+  m_Tag: Settings
+  m_IsVariant: 0

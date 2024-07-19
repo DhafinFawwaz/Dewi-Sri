@@ -31,6 +31,10 @@ public class SliderUI : Slider
         m_Value = newValue;
         UpdateVisualsImmediete();
     }
+    public void SetValue(float input, bool sendCallback = true)
+    {
+        Set(input, sendCallback);
+    }
 
     protected override void Set(float input, bool sendCallback = true)
     {

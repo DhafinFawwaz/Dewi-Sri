@@ -24,6 +24,11 @@ namespace DhafinFawwaz.Tweener
             return this;
         }
 
+        public void SetEndFillValue(float fill)
+        {
+            _endFill = fill;
+        }
+
         public override void Stop()
         {
             foreach (var c in _coroutines) StopCoroutineIfNotNull(c);
@@ -32,6 +37,10 @@ namespace DhafinFawwaz.Tweener
         public void SetTargetAlpha(float alpha)
         {
             _target.color = new Color(_target.color.r, _target.color.g, _target.color.b, alpha);
+        }
+        public void SetTargetRed(float red)
+        {
+            _target.color = new Color(red, _target.color.g, _target.color.b, _target.color.a);
         }
 
         [ContextMenu("Play Color")]

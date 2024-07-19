@@ -29,45 +29,74 @@ public class SettingsManager : MonoBehaviour
         // Audio slider
         float musicVolume = Mathf.Lerp(_musicSlider.minValue, _musicSlider.maxValue, Audio.GetMusicVolume());
         float soundVolume = Mathf.Lerp(_soundSlider.minValue, _soundSlider.maxValue, Audio.GetSoundVolume());
-        _musicSlider.SetValueWithoutNotify(musicVolume);
-        _soundSlider.SetValueWithoutNotify(soundVolume);
+        // _musicSlider.SetValueWithoutNotify(musicVolume);
+        // _soundSlider.SetValueWithoutNotify(soundVolume);
+        _musicSlider.SetValue(musicVolume);
+        _soundSlider.SetValue(soundVolume);
+
 
         // Resolution dropdown
-        _resolutions = ResolutionManager.GetResolutions();
-        _resolutionDropdown.ClearOptions();
-        List<string> options = new List<string>();
+        // _resolutions = ResolutionManager.GetResolutions();
+        // _resolutionDropdown.ClearOptions();
+        // List<string> options = new List<string>();
         
-        int currentResolutionIndex = 0;
-        for(int i = 0; i < _resolutions.Length; i++)
-        {
-            string option = _resolutions[i].width + " × " + _resolutions[i].height;
-            options.Add(option);
+        // int currentResolutionIndex = 0;
+        // for(int i = 0; i < _resolutions.Length; i++)
+        // {
+        //     string option = _resolutions[i].width + " × " + _resolutions[i].height;
+        //     options.Add(option);
 
-            if(_resolutions[i].width == Screen.currentResolution.width && _resolutions[i].height == Screen.currentResolution.height)
-            {currentResolutionIndex = i;}
-        }
-        _resolutionDropdown.AddOptions(options);
-        _resolutionDropdown.value = currentResolutionIndex;
-        _resolutionDropdown.RefreshShownValue();
+        //     if(_resolutions[i].width == Screen.currentResolution.width && _resolutions[i].height == Screen.currentResolution.height)
+        //     {currentResolutionIndex = i;}
+        // }
+        // _resolutionDropdown.AddOptions(options);
+        // _resolutionDropdown.value = currentResolutionIndex;
+        // _resolutionDropdown.RefreshShownValue();
 
         // Fullscreen toggle
-        _fullscreenToggle.isOn = Screen.fullScreen;
-        ResolutionManager.SetFullScreen(_fullscreenToggle.isOn);
-        _fullscreenToggle.onValueChanged.AddListener(ResolutionManager.SetFullScreen);
+        // _fullscreenToggle.isOn = Screen.fullScreen;
+        // ResolutionManager.SetFullScreen(_fullscreenToggle.isOn);
+        // _fullscreenToggle.onValueChanged.AddListener(ResolutionManager.SetFullScreen);
     }
 
     void OnMusicValueChanged(float newVal)
     {
         float normalizedVal = Mathf.InverseLerp(_musicSlider.minValue, _musicSlider.maxValue, newVal);
         Audio.SetMusicMixerVolume(normalizedVal);
+
+        if(normalizedVal == 0)
+        {
+            _musicImage.sprite = _musicToggle[0];
+        }
+        else
+        {
+            _musicImage.sprite = _musicToggle[1];
+        }
     }
 
     void OnSoundValueChanged(float newVal)
     {
         float normalizedVal = Mathf.InverseLerp(_soundSlider.minValue, _soundSlider.maxValue, newVal);
         Audio.SetSoundMixerVolume(normalizedVal);
+
+        if(normalizedVal == 0)
+        {
+            _soundImage.sprite = _soundToggle[0];
+        }
+        else
+        {
+            _soundImage.sprite = _soundToggle[1];
+        }
     }
 
     public void OnResolutionValueChanged(int resolutionIndex)
         => ResolutionManager.SetResolution(resolutionIndex);
+
+
+
+    [Header("Toggle Images")]
+    [SerializeField] Sprite[] _musicToggle;
+    [SerializeField] Sprite[] _soundToggle;
+    [SerializeField] Image _musicImage;
+    [SerializeField] Image _soundImage;
 }

@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Page13Manager : MonoBehaviour
 {
     [SerializeField] SpriteAnimator _babiAnimator;
     [SerializeField] GameObject[] _state;
     int _stateIndex = 0;
+
 
     public void NextState()
     {
@@ -44,5 +46,8 @@ public class Page13Manager : MonoBehaviour
         _apelIndex++;
         if(_apelIndex >= _apelList.Length) return;
         _apelList[_apelIndex].SetActive(true);
+
+        if(_apelIndex == _apelList.Length - 1) _onFinish?.Invoke();
     }
+    [SerializeField] UnityEvent _onFinish;
 }

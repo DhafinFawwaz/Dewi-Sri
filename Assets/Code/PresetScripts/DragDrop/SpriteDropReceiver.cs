@@ -7,6 +7,7 @@ public class SpriteDropReceiver : MonoBehaviour
 {
     enum DropReceiverState { None, Enter }
     DropReceiverState _state = DropReceiverState.None;
+    [SerializeField] Transform _target;
     [SerializeField] Vector3 _normalScale = Vector3.one;
     [SerializeField] Vector3 _enterScale = Vector3.one * 1.1f;
     [SerializeField] float _tweenDuration = 0.25f;
@@ -57,17 +58,17 @@ public class SpriteDropReceiver : MonoBehaviour
     IEnumerator TweenLocalScale(Vector3 end, float duration)
     {
         byte requirement = ++_scaleKey;
-        Vector3 start = transform.localScale;
+        Vector3 start = _target.localScale;
         float t = 0;
         while(t < 1 && requirement == _scaleKey)
         {
             t += Time.deltaTime / duration;
-            transform.localScale = Vector3.LerpUnclamped(start, end, OutBackCubic(t));
+            _target.localScale = Vector3.LerpUnclamped(start, end, OutBackCubic(t));
             yield return null;
         }
         if(requirement == _scaleKey)
         {
-            transform.localScale = end;
+            _target.localScale = end;
         }
     }
     static float OutQuart(float x) => -((1-x)*(1-x)*(1-x)*(1-x)) + 1;

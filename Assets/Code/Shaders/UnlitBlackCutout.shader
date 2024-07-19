@@ -1,13 +1,12 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "Custom/Unlit Grayscale Cutout"
 {
     Properties
     {
-        _MainTex ("Base",   2D)    = ""{}
-        _Color   ("Color",  Color) = (1, 1, 1, 1)
+        _MainTex ("Base", 2D) = "" {}
+        _Color ("Color", Color) = (1, 1, 1, 1)
         [Range(0, 1)]
-        _Cutoff  ("Cutoff", Float) = 0.5
+        _Cutoff ("Cutoff", Float) = 0.5
+        _FallOff ("FallOff", Float) = 0.1
     }
 
     CGINCLUDE
@@ -24,6 +23,7 @@ Shader "Custom/Unlit Grayscale Cutout"
     float4 _MainTex_ST;
     float4 _Color;
     float _Cutoff;
+    float _FallOff;
 
     v2f vert(appdata_base v)
     {
@@ -33,25 +33,35 @@ Shader "Custom/Unlit Grayscale Cutout"
         return o;
     }
 
-    float4 frag(v2f i) : COLOR
+    float remap(float value, float from1, float to1, float from2, float to2)
+    {
+        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+    }
+
+    float4 frag(v2f i) : SV_Target
     {
         float4 c = tex2D(_MainTex, i.texcoord);
-        clip(c.r + c.g + c.b - _Cutoff*3);
-        return c * _Color;
+        c.a = step(_Cutoff, (c.r + c.g + c.b) / 3);
+        // c.a = remap((c.r + c.g + c.b) / 3, _Cutoff, _FallOff, 0, 1);
+        // c.a = saturate(c.a);
+        return c;
     }
 
     ENDCG
 
     SubShader
     {
-        Tags { "RenderType"="TransparentCutout" "Queue"="AlphaTest" }
+        Tags { "RenderType"="Transparent" "Queue"="Transparent" }
+
         Pass
         {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             ENDCG
         }
-    } 
+    }
     FallBack "Diffuse"
 }

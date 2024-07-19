@@ -113,6 +113,18 @@ public class AchoredSpriteRenderer : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(!_enable) return;
+        if(!gameObject.activeInHierarchy) return;
+        if (_mainCam == null) _mainCam = Camera.main;
+        if (_spriteRenderer == null) _spriteRenderer = GetComponent<SpriteRenderer>();
+
+        Set(_screenPosition, _anchorPoint);
+
+        UpdateFit();
+    }
+
 #if UNITY_EDITOR
     void OnDrawGizmosSelected()
     {
