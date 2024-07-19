@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page23AirMata
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: d269e233ebe140c49b7be64759071a75, type: 3}
+    - {fileID: 2800000, guid: 8fde79ebebd484540a998d4f270ad2a1, type: 3}
+    - {fileID: 2800000, guid: 8547bd0a134554345abde466c926428c, type: 3}
+    - {fileID: 2800000, guid: 9deb8f330c5d6144da20080188c95331, type: 3}
+    - {fileID: 2800000, guid: 7e60db4712474c14d9332870785a8918, type: 3}
+    - {fileID: 2800000, guid: 58da86e540c969848b738438afa7a85f, type: 3}
+    - {fileID: 2800000, guid: 7ab56335092a76f4099ab06de352b1e7, type: 3}
+    - {fileID: 2800000, guid: d6ff8232cc5503f41aa0a51dbc064c09, type: 3}
+    - {fileID: 2800000, guid: f85f55e31acb4de4498d3f867aed183d, type: 3}
+    - {fileID: 2800000, guid: 59bc008830d1f15489dd273304c3f412, type: 3}
+    - {fileID: 2800000, guid: f9ca4c9c2af56604aa2b873f54620228, type: 3}
+    - {fileID: 2800000, guid: b482e4438a4347a488e274afac881f4d, type: 3}
+    - {fileID: 2800000, guid: 45f9ac0c8b499c44b897f76628929bf3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d6ff8232cc5503f41aa0a51dbc064c09, type: 3}
+  - {fileID: 21300000, guid: d269e233ebe140c49b7be64759071a75, type: 3}
+  - {fileID: 21300000, guid: 9deb8f330c5d6144da20080188c95331, type: 3}
+  - {fileID: 21300000, guid: b482e4438a4347a488e274afac881f4d, type: 3}
+  - {fileID: 21300000, guid: f85f55e31acb4de4498d3f867aed183d, type: 3}
+  - {fileID: 21300000, guid: 7ab56335092a76f4099ab06de352b1e7, type: 3}
+  - {fileID: 21300000, guid: 58da86e540c969848b738438afa7a85f, type: 3}
+  - {fileID: 21300000, guid: 7e60db4712474c14d9332870785a8918, type: 3}
+  - {fileID: 21300000, guid: 59bc008830d1f15489dd273304c3f412, type: 3}
+  - {fileID: 21300000, guid: 8547bd0a134554345abde466c926428c, type: 3}
+  - {fileID: 21300000, guid: 8fde79ebebd484540a998d4f270ad2a1, type: 3}
+  - {fileID: 21300000, guid: 45f9ac0c8b499c44b897f76628929bf3, type: 3}
+  - {fileID: 21300000, guid: f9ca4c9c2af56604aa2b873f54620228, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Timeline 1_0007
+  - Timeline 1_0000
+  - Timeline 1_0003
+  - Timeline 1_0011
+  - Timeline 1_0008
+  - Timeline 1_0006
+  - Timeline 1_0005
+  - Timeline 1_0004
+  - Timeline 1_0009
+  - Timeline 1_0002
+  - Timeline 1_0001
+  - Timeline 1_0012
+  - Timeline 1_0010
+  m_RenderDataMap: {}
+  m_Tag: Page23AirMata
+  m_IsVariant: 0
