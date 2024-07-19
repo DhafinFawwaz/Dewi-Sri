@@ -8,13 +8,12 @@ namespace DhafinFawwaz.Tweener
     {
         [Header("Values")]
         [SerializeField] TMP_Text _target;
-        [TextArea]
-        [SerializeField] string _text;
         [SerializeField] long _start;
         [SerializeField] long _end;
         [SerializeField] string _numericFormat = "N0";
         [SerializeField] string _textFormat = "{0}";
         Coroutine[] _coroutines = new Coroutine[1];
+        [SerializeField] bool _constantSpeed = false;
         [SerializeField] bool _hideTextOnAwake = false;
         void Awake()
         {
@@ -69,7 +68,7 @@ namespace DhafinFawwaz.Tweener
                 x => _target.maxVisibleCharacters = x,
                 0,
                 _target.text.Length,
-                _duration,
+                _constantSpeed ? _duration*_target.text.Length : _duration,
                 LerpUnclamped
             );
         }

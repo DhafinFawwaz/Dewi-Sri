@@ -44,10 +44,22 @@ public class AudioManager : MonoBehaviour
         _musicSource.Stop();
         _musicSource.Play();
     }
+
+    public void PlayMusicWithSFX(AudioClip audioClip)
+    {
+        _soundSource.clip = audioClip;
+        _soundSource.Stop();
+        _soundSource.Play();
+    }
     public void StopMusic()
     {
         _musicSource.clip = null;
         _musicSource.Stop();
+    }
+    public void StopMusicWithSFX()
+    {
+        _soundSource.clip = null;
+        _soundSource.Stop();
     }
     public void StopPlayMusic()
     {
@@ -85,6 +97,10 @@ public class AudioManager : MonoBehaviour
     {
         _musicSource.volume = t;
     }
+    public void SetMusicSourceVolumeWithSFX(float t)
+    {
+        _soundSource.volume = t;
+    }
 
     public void SetMusicMixerVolume(float newVal)
     {
@@ -108,6 +124,10 @@ public class AudioManager : MonoBehaviour
     public void ToggleLoop(bool isLooping)
     {
         _musicSource.loop = isLooping;
+    }
+    public void ToggleLoopWithSFX(bool isLooping)
+    {
+        _soundSource.loop = isLooping;
     }
 
     public void MusicFadeOut(float duration)
@@ -174,14 +194,18 @@ public static class Audio
     public static float GetSoundVolume() => _audio.GetSoundVolume();
     public static AudioClip GetCurrentMusicClip() => _audio.GetCurrentMusicClip();
     public static void PlayMusic(AudioClip audioClip) => _audio.PlayMusic(audioClip);
+    public static void PlayMusicWithSFX(AudioClip audioClip) => _audio.PlayMusicWithSFX(audioClip);
     public static void StopMusic() => _audio.StopMusic();
+    public static void StopMusicWithSFX() => _audio.StopMusicWithSFX();
     public static void StopPlayMusic() => _audio.StopPlayMusic();
     public static void PlaySound(AudioClip audioClip, float volume) => _audio.PlaySound(audioClip, volume);
     public static void PlaySound(AudioClip audioClip) => _audio.PlaySound(audioClip);
     public static void SetMusicSourceVolume(float t) => _audio.SetMusicSourceVolume(t);
+    public static void SetMusicSourceVolumeWithSFX(float t) => _audio.SetMusicSourceVolumeWithSFX(t);
     public static void SetMusicMixerVolume(float newVal) => _audio.SetMusicMixerVolume(newVal);
     public static void SetSoundMixerVolume(float newVal) => _audio.SetSoundMixerVolume( newVal);
     public static void ToggleLoop(bool isLooping) => _audio.ToggleLoop(isLooping);
+    public static void ToggleLoopWithSFX(bool isLooping) => _audio.ToggleLoopWithSFX(isLooping);
     public static void MusicFadeOut(float duration) => _audio.MusicFadeOut(duration);
     public static void MusicFadeOutAndChangeTo(AudioClip _musicClip, bool isLooping, float duration, float delayBeforeChangeDuration)
         => _audio.MusicFadeOutAndChangeTo(_musicClip, isLooping, duration, delayBeforeChangeDuration);

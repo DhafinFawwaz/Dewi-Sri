@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Terimakasih
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 287b59490b3d9364385ebe3fa67a5a30, type: 3}
+    - {fileID: 2800000, guid: 24ae58744f4ffa345b62feb44d59fd96, type: 3}
+    - {fileID: 2800000, guid: 89315ace1582d774fbfb2ce730cb771c, type: 3}
+    - {fileID: 2800000, guid: ce914a9286cf6ea4cb87f9637f4fcf4c, type: 3}
+    - {fileID: 2800000, guid: 48e58bd4d87ada94cbfa3fd7db3eaf42, type: 3}
+    - {fileID: 2800000, guid: 60ae2838fee460241b446fb36b66e753, type: 3}
+    - {fileID: 2800000, guid: 8d00c7f77dd59fc41aa4f6693327e797, type: 3}
+    - {fileID: 2800000, guid: 9715a3ecff58afb439f49bd74bfcdeb2, type: 3}
+    - {fileID: 2800000, guid: e98c95307c3b0704480ae060728054d6, type: 3}
+    - {fileID: 2800000, guid: a2ad4b28045907b4da5f11fb70899a78, type: 3}
+    - {fileID: 2800000, guid: 756e2a15a3c577a41804b2696afa86d2, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e98c95307c3b0704480ae060728054d6, type: 3}
+  - {fileID: 21300000, guid: ce914a9286cf6ea4cb87f9637f4fcf4c, type: 3}
+  - {fileID: 21300000, guid: 24ae58744f4ffa345b62feb44d59fd96, type: 3}
+  - {fileID: 21300000, guid: 48e58bd4d87ada94cbfa3fd7db3eaf42, type: 3}
+  - {fileID: 21300000, guid: 756e2a15a3c577a41804b2696afa86d2, type: 3}
+  - {fileID: 21300000, guid: 8d00c7f77dd59fc41aa4f6693327e797, type: 3}
+  - {fileID: 21300000, guid: a2ad4b28045907b4da5f11fb70899a78, type: 3}
+  - {fileID: 21300000, guid: 60ae2838fee460241b446fb36b66e753, type: 3}
+  - {fileID: 21300000, guid: 287b59490b3d9364385ebe3fa67a5a30, type: 3}
+  - {fileID: 21300000, guid: 9715a3ecff58afb439f49bd74bfcdeb2, type: 3}
+  - {fileID: 21300000, guid: 89315ace1582d774fbfb2ce730cb771c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Terimakasih_0008_Babi-Hutan
+  - Terimakasih_0003_Terima-Kasih!
+  - Terimakasih_0001_Teks-kerbau
+  - Terimakasih_0004_Sama-sama
+  - Terimakasih_0010_Background-
+  - Terimakasih_0006_Frame-Luar
+  - Terimakasih_0009_Kerbau
+  - Terimakasih_0005_Button
+  - Terimakasih_0000_Teks-Babi-hutan
+  - Terimakasih_0007_Ibu-Kodok
+  - Terimakasih_0002_Teks-kodok
+  m_RenderDataMap: {}
+  m_Tag: Terimakasih
+  m_IsVariant: 0

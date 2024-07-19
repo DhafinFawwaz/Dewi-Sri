@@ -28,6 +28,7 @@ public class PageController : MonoBehaviour
 
     void Awake()
     {
+        _pageAmount = transform.childCount;
         StartCoroutine(Init());
     }
 
@@ -35,12 +36,11 @@ public class PageController : MonoBehaviour
     {
         while(_videoPlayers.Any(x => !x.isPrepared))
         {
-            yield return new WaitForSecondsRealtime(0.3f);
+            yield return new WaitForSecondsRealtime(0.1f);
         }
 
         StartCoroutine(_sceneTransition.InAnimation());
 
-        _pageAmount = transform.childCount;
         for (int i = _pageAmount-1; i >= 0; i--)
         {
             if(transform.GetChild(i).gameObject.activeInHierarchy)

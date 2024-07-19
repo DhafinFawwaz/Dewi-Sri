@@ -191,15 +191,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _otherTweenToStop: []
-  _duration: 4
+  _duration: 0.03
   _easeType: 1
   _easePower: 0
   _target: {fileID: 8337937872326552636}
-  _text: 
   _start: 0
   _end: 0
   _numericFormat: N0
   _textFormat: '{0}'
+  _constantSpeed: 1
   _hideTextOnAwake: 1
 --- !u!114 &8337937872326552638
 MonoBehaviour:

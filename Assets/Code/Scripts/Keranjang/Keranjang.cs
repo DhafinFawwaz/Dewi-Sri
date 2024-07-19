@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DhafinFawwaz.Tweener;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Keranjang : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Keranjang : MonoBehaviour
 
     [Tooltip("Filter the trash name to be accepted by this trash can")]
     [SerializeField] string _trashName = "page10_0003_Sampah-10";
+
+    [SerializeField] UnityEvent _onTrashDropped;
     public void OnTrashDropped(SpriteDragDrop spriteDragDrop)
     {
         if(spriteDragDrop.name != _trashName) return;
@@ -19,5 +22,6 @@ public class Keranjang : MonoBehaviour
             .SetEnd(transform.position)
             .Position();
         spriteDragDrop.GetComponent<SpriteRenderer>().sortingOrder = _orderInLayer;
+        _onTrashDropped?.Invoke();
     }
 }

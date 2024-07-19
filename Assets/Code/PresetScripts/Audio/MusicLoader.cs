@@ -5,6 +5,7 @@ public class MusicLoader : MonoBehaviour
 {
     [SerializeField] AudioClip _musicClip;
     [SerializeField] bool _isLooping = true;
+    [SerializeField] bool _playWithSFXSource = false;
     void OnEnable() => StartCoroutine(DelayOnEnable());
 
     IEnumerator DelayOnEnable()
@@ -14,20 +15,33 @@ public class MusicLoader : MonoBehaviour
             Debug.Log("Audio isn't initialized yet");
             yield return null;
         }
-        Audio.SetMusicSourceVolume(1);
+        if(_playWithSFXSource) Audio.SetMusicSourceVolumeWithSFX(0);
+        else Audio.SetMusicSourceVolume(1);
         if(_musicClip == Audio.GetCurrentMusicClip()) // Same music
         {
-            Audio.ToggleLoop(true);
+            if(_playWithSFXSource) Audio.ToggleLoopWithSFX(true);
+            else Audio.ToggleLoop(true);
         }
         else if(_musicClip != null) // Different music
         {
-            Audio.ToggleLoop(_isLooping);
-            Audio.PlayMusic(_musicClip);
+            if(_playWithSFXSource) {
+                Audio.ToggleLoopWithSFX(_isLooping);
+                Audio.PlayMusicWithSFX(_musicClip);
+            }
+            else {
+                Audio.ToggleLoop(_isLooping);
+                Audio.PlayMusic(_musicClip);
+            }
         }
         else // No music
         {
-            Audio.ToggleLoop(true);
-            Audio.StopMusic();
+            if(_playWithSFXSource) {
+                Audio.ToggleLoopWithSFX(true);
+                Audio.StopMusicWithSFX();
+            } else {
+                Audio.ToggleLoop(true);
+                Audio.StopMusic();
+            }
         }
     }
     

@@ -61,7 +61,7 @@ namespace DhafinFawwaz.Tweener
 
         protected Coroutine TweenIfActive<T>(Action<T> action, T start, T end, float duration, Func<T, T, float, T> lerpFunction)
         {
-            if (gameObject.activeInHierarchy) return StartCoroutine(Tween(action, start, end, _duration, lerpFunction));
+            if (gameObject.activeInHierarchy) return StartCoroutine(Tween(action, start, end, duration, lerpFunction));
             return null;
         }
 
