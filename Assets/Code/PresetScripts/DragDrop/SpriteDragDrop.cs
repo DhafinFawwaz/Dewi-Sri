@@ -18,6 +18,9 @@ public class SpriteDragDrop : MonoBehaviour
 
 
     public UnityEvent OnDrop;
+    public UnityEvent OnDragStart;
+    public UnityEvent OnEnter;
+    public UnityEvent OnExit;
 
     void Awake()
     {
@@ -54,6 +57,7 @@ public class SpriteDragDrop : MonoBehaviour
         _state = DragDropState.Down;
         _offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _isDragging = true;
+        OnDragStart?.Invoke();
     }
 
     void OnMouseUp()
@@ -80,6 +84,18 @@ public class SpriteDragDrop : MonoBehaviour
     public void GoToInitialPosition(float duration = 0.5f)
     {
         StartCoroutine(TweenPosition(_initialPosition, duration));
+    }
+
+    public void OnEnterDroppable(SpriteDragDrop spriteDragDrop)
+    {
+        if(spriteDragDrop != this) return;
+        OnEnter?.Invoke();
+    }
+
+    public void OnExitDroppable(SpriteDragDrop spriteDragDrop)
+    {
+        if(spriteDragDrop != this) return;
+        OnExit?.Invoke();
     }
 
 

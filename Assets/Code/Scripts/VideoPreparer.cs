@@ -14,7 +14,7 @@ public class VideoPreparer : MonoBehaviour
 
     void Awake()
     {
-        _videoPlayer.Prepare();
+        // _videoPlayer.Prepare();
     }
 
 
@@ -42,15 +42,17 @@ public class VideoPreparer : MonoBehaviour
     {
         _inputBlocker.SetActive(true);
 
-        if(_firstTime && _videoPlayer.isPrepared)
-        {
-            _firstTime = false;
-            _onPrepared?.Invoke();
-            _videoPlayer.Play();
-            _inputBlocker.SetActive(false);
-        }
-        else
-        {
+        // if(_firstTime && _videoPlayer.isPrepared)
+        // {
+        //     _firstTime = false;
+        //     _onPrepared?.Invoke();
+        //     Debug.Log("First time prepared");
+        //     _videoPlayer.Play();
+        //     _inputBlocker.SetActive(false);
+        // }
+        // else
+        // {
+            yield return new WaitForSeconds(1);
             _videoPlayer.gameObject.SetActive(false);
             yield return null;
             _videoPlayer.gameObject.SetActive(true);
@@ -59,10 +61,11 @@ public class VideoPreparer : MonoBehaviour
             while(!_videoPlayer.isPrepared) yield return null;
             _onPrepared?.Invoke();
 
-
+            yield return null;
             _videoPlayer.Play();
+
             
             _inputBlocker.SetActive(false);
-        }
+        // }
     }
 }

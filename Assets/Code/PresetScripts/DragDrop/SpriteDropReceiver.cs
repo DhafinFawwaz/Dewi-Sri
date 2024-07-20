@@ -12,6 +12,8 @@ public class SpriteDropReceiver : MonoBehaviour
     [SerializeField] Vector3 _enterScale = Vector3.one * 1.1f;
     [SerializeField] float _tweenDuration = 0.25f;
     [SerializeField] UnityEvent<SpriteDragDrop> _onDrop;
+    [SerializeField] UnityEvent<SpriteDragDrop> _onEnter;
+    [SerializeField] UnityEvent<SpriteDragDrop> _onExit;
     SpriteDragDrop _dragDrop;
 
     void StartCoroutineIfActive(IEnumerator routine)
@@ -26,6 +28,7 @@ public class SpriteDropReceiver : MonoBehaviour
             _dragDrop = dragDrop;
             _state = DropReceiverState.Enter;
             StartCoroutineIfActive(TweenLocalScale(_enterScale, _tweenDuration));
+            _onEnter?.Invoke(dragDrop);
         }
     }
 
@@ -34,6 +37,10 @@ public class SpriteDropReceiver : MonoBehaviour
         _dragDrop = null;
         _state = DropReceiverState.None;
         StartCoroutineIfActive(TweenLocalScale(_normalScale, _tweenDuration));
+        if(col.TryGetComponent(out SpriteDragDrop dragDrop) && dragDrop.IsDragging)
+        {
+            _onExit?.Invoke(dragDrop);
+        }
     }
 
 

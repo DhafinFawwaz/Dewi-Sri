@@ -7,6 +7,8 @@ Shader "Custom/Unlit Grayscale Cutout"
         [Range(0, 1)]
         _Cutoff ("Cutoff", Float) = 0.5
         _FallOff ("FallOff", Float) = 0.1
+        _ColorToReplaceBlack ("Color to Replace Black", Color) = (0, 1, 0, 1)
+        _ColorToReplaceBlackLimit ("Color to Replace Black Cutout", Float) = 0.1
     }
 
     CGINCLUDE
@@ -24,6 +26,8 @@ Shader "Custom/Unlit Grayscale Cutout"
     float4 _Color;
     float _Cutoff;
     float _FallOff;
+    float4 _ColorToReplaceBlack;
+    float _ColorToReplaceBlackLimit;
 
     v2f vert(appdata_base v)
     {
@@ -44,6 +48,10 @@ Shader "Custom/Unlit Grayscale Cutout"
         c.a = step(_Cutoff, (c.r + c.g + c.b) / 3);
         // c.a = remap((c.r + c.g + c.b) / 3, _Cutoff, _FallOff, 0, 1);
         // c.a = saturate(c.a);
+        if ((c.r + c.g + c.b) / 3 < _ColorToReplaceBlackLimit)
+        {
+            c.rgb = _ColorToReplaceBlack.rgb;
+        }
         return c;
     }
 

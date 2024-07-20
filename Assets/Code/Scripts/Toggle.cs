@@ -24,6 +24,7 @@ public class Toggle : MonoBehaviour
     {
         _isOn = !_isOn;
         PlayerPrefs.SetInt("Hint", _isOn ? 1 : 0);
+        Hint.S_OnHintChanged?.Invoke();
         if(_isOn) _onTween.LocalPosition();
         else _offTween.LocalPosition();
     }

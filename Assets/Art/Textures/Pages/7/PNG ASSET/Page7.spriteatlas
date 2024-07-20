@@ -72,6 +72,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: b99d96a5383611e468f9b35f26962c75, type: 3}
     - {fileID: 2800000, guid: e082b9bb28f113b4c81e031d6d4b4edf, type: 3}
     - {fileID: 2800000, guid: f7485e9e9b3bf5c4191811dbb43d5c64, type: 3}
+    - {fileID: 2800000, guid: 6b4f9b51a23b7bc44a1a5184a5fee650, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -83,6 +84,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 512cefa03f1b2eb43ba871ff637b4de7, type: 3}
   - {fileID: 21300000, guid: 062c7101a72013c498502c4aae25a7e4, type: 3}
   - {fileID: 21300000, guid: 608f6521c4ea68a4cb77c27a0d081a58, type: 3}
+  - {fileID: 21300000, guid: 6b4f9b51a23b7bc44a1a5184a5fee650, type: 3}
   - {fileID: 21300000, guid: 317fc362f9389ed49a21680831e80504, type: 3}
   - {fileID: 21300000, guid: f41ba315ef67fe441825fce394364a57, type: 3}
   - {fileID: 21300000, guid: 8b15dd15b2634144199c51031a871f9f, type: 3}
@@ -112,6 +114,7 @@ SpriteAtlas:
   - Page-07_0001s_0000_Jaring-(tas)
   - Page-07_0001s_0006_Hint-Senter
   - Page-07_0001s_0008_Hint-Gunting
+  - Page-07_0004_Kotak-Makan
   - Page-07_0000s_0001_Item-5-(salah)
   - Page-07_0000s_0003_Item-3-(salah)
   - Page-07_0000_Gunting

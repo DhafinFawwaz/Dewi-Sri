@@ -21,7 +21,11 @@ public class Keranjang : MonoBehaviour
         _tweener.SetTarget(spriteDragDrop.transform)
             .SetEnd(transform.position)
             .Position();
-        spriteDragDrop.GetComponent<SpriteRenderer>().sortingOrder = _orderInLayer;
+        
+        if(spriteDragDrop.TryGetComponent(out SpriteRenderer spriteShakeWhenTouched))
+        {
+            spriteShakeWhenTouched.sortingOrder = _orderInLayer;
+        }
         _onTrashDropped?.Invoke();
     }
 }

@@ -2,14 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpriteShakeWhenTouched : MonoBehaviour
 {
     Vector3 _start;
     Vector3 _end;
-    [SerializeField] float _sideLength = 1f;
-    [SerializeField] float _duration = 1f;
-    [SerializeField] float _frequency = 10f;
+    [SerializeField] float _sideLength = 0.2f;
+    [SerializeField] float _duration = 0.3f;
+    [SerializeField] float _frequency = 5f;
+    [SerializeField] UnityEvent _onShake; 
 
     void Awake()
     {
@@ -19,6 +21,7 @@ public class SpriteShakeWhenTouched : MonoBehaviour
     void OnMouseDown()
     {   
         StartCoroutine(TweenPosition());
+        _onShake?.Invoke();
     }
 
 

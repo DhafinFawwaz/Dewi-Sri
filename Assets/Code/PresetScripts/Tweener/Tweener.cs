@@ -21,7 +21,6 @@ namespace DhafinFawwaz.Tweener
         public float OnDoneDelay {get => _onDoneDelay; set => _onDoneDelay = value;}
         [SerializeField] UnityEvent _onTweenDone;
         public UnityEvent OnTweenDone => _onTweenDone;
-        public Action OnDone;
         
         [Header("Interrupts")]
         [SerializeField] Tweener[] _otherTweenToStop;
@@ -43,6 +42,17 @@ namespace DhafinFawwaz.Tweener
         void Reset()
         {
             _easeFunction = Ease.GetEase(_easeType, _easePower);
+        }
+
+        // Clear the action once done
+        public void OnceDone(Action action)
+        {
+            void OnceDoneCallback()
+            {
+                action?.Invoke();
+                OnTweenDone.RemoveListener(OnceDoneCallback);
+            }
+            OnTweenDone.AddListener(OnceDoneCallback);
         }
 
 
@@ -147,7 +157,7 @@ namespace DhafinFawwaz.Tweener
 
 #if UNITY_EDITOR
 
-    [CustomEditor(typeof(Tweener), true)]
+    [CustomEditor(typeof(Tweener), true), CanEditMultipleObjects]
     public class TweenerEditor : Editor
     {
         bool _advanced = false;

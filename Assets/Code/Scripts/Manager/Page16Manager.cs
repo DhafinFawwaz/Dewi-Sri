@@ -21,7 +21,13 @@ public class Page16Manager : MonoBehaviour
         if(_clickables.All(c => !c.activeInHierarchy))
         {
             _isFinished = true;
-            _onFinish?.Invoke();
+            StartCoroutine(DelayCallback(0.5f, _onFinish));
         }
+    }
+
+    IEnumerator DelayCallback(float delay, UnityEvent callback)
+    {
+        yield return new WaitForSeconds(delay);
+        callback?.Invoke();
     }
 }

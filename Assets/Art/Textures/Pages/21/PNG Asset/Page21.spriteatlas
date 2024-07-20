@@ -44,10 +44,10 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: 6488064c54160734c96acb03f834a1f3, type: 3}
-    - {fileID: 2800000, guid: 80c9b4e73869b5d469c010998e3784bd, type: 3}
-    - {fileID: 2800000, guid: 6296fd491082e8a458361e8a47856ffd, type: 3}
-    - {fileID: 2800000, guid: 39dff82e79b41c048939638e8d5bc8f8, type: 3}
+    - {fileID: 2800000, guid: 7800615920c69ef48b03eddb785a847e, type: 3}
+    - {fileID: 2800000, guid: bc7a95f9f107b694aa8eb7d76ed12af4, type: 3}
+    - {fileID: 2800000, guid: 597b646f22d12604ebf45503eee7b729, type: 3}
+    - {fileID: 2800000, guid: c721fa394186fb54fa96a967c2b6a379, type: 3}
     - {fileID: 2800000, guid: 8dc6f858eb877524fb2d7a4464371c66, type: 3}
     - {fileID: 2800000, guid: 90f58a8e4afaa9a46a928561b2328965, type: 3}
     - {fileID: 2800000, guid: 1442b46a59cbf1848b69ccd3fbd8e0f1, type: 3}
@@ -64,10 +64,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: ae8f9f0325ac93f4b8e0c8b9ae4f0db2, type: 3}
     - {fileID: 2800000, guid: 0a5ad93840ce26b45ad45fc542226b09, type: 3}
     - {fileID: 2800000, guid: 7800615920c69ef48b03eddb785a847e, type: 3}
-    - {fileID: 2800000, guid: c721fa394186fb54fa96a967c2b6a379, type: 3}
-    - {fileID: 2800000, guid: 597b646f22d12604ebf45503eee7b729, type: 3}
-    - {fileID: 2800000, guid: bc7a95f9f107b694aa8eb7d76ed12af4, type: 3}
-    - {fileID: 2800000, guid: 7800615920c69ef48b03eddb785a847e, type: 3}
+    - {fileID: 2800000, guid: b953794e3c9a5b7498663ea9ba63ac00, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -80,21 +77,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ae8f9f0325ac93f4b8e0c8b9ae4f0db2, type: 3}
   - {fileID: 21300000, guid: 200f126366b2ee2448bf2369c9894cae, type: 3}
   - {fileID: 21300000, guid: eb122cf56df9f504291eb50367dc0ef7, type: 3}
-  - {fileID: 21300000, guid: 80c9b4e73869b5d469c010998e3784bd, type: 3}
   - {fileID: 21300000, guid: 0a5ad93840ce26b45ad45fc542226b09, type: 3}
   - {fileID: 21300000, guid: 8dc6f858eb877524fb2d7a4464371c66, type: 3}
   - {fileID: 21300000, guid: 99dfd339732646b4fb68420f03174f59, type: 3}
   - {fileID: 21300000, guid: c721fa394186fb54fa96a967c2b6a379, type: 3}
-  - {fileID: 21300000, guid: 6296fd491082e8a458361e8a47856ffd, type: 3}
   - {fileID: 21300000, guid: 7800615920c69ef48b03eddb785a847e, type: 3}
   - {fileID: 21300000, guid: bc7a95f9f107b694aa8eb7d76ed12af4, type: 3}
   - {fileID: 21300000, guid: a5ba120ae80b9a5449f25365e292040c, type: 3}
   - {fileID: 21300000, guid: 1442b46a59cbf1848b69ccd3fbd8e0f1, type: 3}
-  - {fileID: 21300000, guid: 6488064c54160734c96acb03f834a1f3, type: 3}
   - {fileID: 21300000, guid: 99e167ecade60f245be017b965cb3b0f, type: 3}
   - {fileID: 21300000, guid: 9382052d5045fdc4f8eaf19cd5b846e3, type: 3}
   - {fileID: 21300000, guid: 0a48584df4b907643baeb630e4970c82, type: 3}
-  - {fileID: 21300000, guid: 39dff82e79b41c048939638e8d5bc8f8, type: 3}
+  - {fileID: 21300000, guid: b953794e3c9a5b7498663ea9ba63ac00, type: 3}
   - {fileID: 21300000, guid: 90f58a8e4afaa9a46a928561b2328965, type: 3}
   - {fileID: 21300000, guid: 597b646f22d12604ebf45503eee7b729, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -105,21 +99,18 @@ SpriteAtlas:
   - Page21_0017_Daun-Tomat
   - Page21_0011_Tanaman
   - Page21_0015_Tangkai-Bunga
-  - Page21_0001_Sparkle-3
   - Page21_0018_Tomat-Matang
   - Page21_0004_Dewi-Sri
   - Page21_0012_Rumput2
   - Page21_0020_Pohon-Tomat
-  - Page21_0002_Sparkle-2
   - Page21_0019_Tomat-Belum-Matang
   - Page21_0022_Background-Jerami-terang
   - Page21_0007_BG-Dewi-Sri
   - Page21_0006_Lighting-(overlay)
-  - Page21_0000_Sparkle-4
   - Page21_0016_BG-2
   - Page21_0013_BG-1
   - Page21_0008_Tanah
-  - Page21_0003_Sparkle-1
+  - page1_0000_Inserted-Image
   - Page21_0005_Jerami
   - Page21_0021_BG-3
   m_RenderDataMap: {}
