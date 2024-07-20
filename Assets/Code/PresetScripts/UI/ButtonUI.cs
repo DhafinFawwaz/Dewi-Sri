@@ -176,6 +176,7 @@ public class ButtonUI : Selectable, IPointerClickHandler, ISubmitHandler
     public void SetInteractableImmediete(bool isInteractable)
     {
         interactable = isInteractable;
+        _key++;
         if(interactable)
         {
             targetGraphic.transform.localScale = _scales.normalScale * Vector3.one;
@@ -185,7 +186,7 @@ public class ButtonUI : Selectable, IPointerClickHandler, ISubmitHandler
         else
         {
             targetGraphic.transform.localScale = _scales.disabledScale * Vector3.one;
-            targetGraphic.color = colors.disabledColor;
+            targetGraphic.color = colors.disabledColor; 
             _text.color = _textColors.disabledColor;
         }
     }

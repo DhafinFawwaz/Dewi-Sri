@@ -13,6 +13,12 @@ public class SpriteShakeWhenTouched : MonoBehaviour
     [SerializeField] float _frequency = 5f;
     [SerializeField] UnityEvent _onShake; 
 
+    bool _enabled = true;
+    public void SetEnabled(bool enabled)
+    {
+        _enabled = enabled;
+    }
+
     void Awake()
     {
         _start = transform.position;
@@ -20,6 +26,7 @@ public class SpriteShakeWhenTouched : MonoBehaviour
     }
     void OnMouseDown()
     {   
+        if(!_enabled) return;
         StartCoroutine(TweenPosition());
         _onShake?.Invoke();
     }

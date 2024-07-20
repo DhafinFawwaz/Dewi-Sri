@@ -47,7 +47,13 @@ public class Page13Manager : MonoBehaviour
         if(_apelIndex >= _apelList.Length) return;
         _apelList[_apelIndex].SetActive(true);
 
-        if(_apelIndex == _apelList.Length - 1) _onFinish?.Invoke();
+        if(_apelIndex == _apelList.Length-1) StartCoroutine(DelayCallback(1, _onFinish));
     }
     [SerializeField] UnityEvent _onFinish;
+
+    IEnumerator DelayCallback(float delay, UnityEvent callback)
+    {
+        yield return new WaitForSeconds(delay);
+        callback?.Invoke();
+    }
 }

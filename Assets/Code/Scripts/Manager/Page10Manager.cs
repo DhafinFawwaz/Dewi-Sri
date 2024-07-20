@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DhafinFawwaz.Tweener;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Page10Manager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Page10Manager : MonoBehaviour
     [SerializeField] SpriteRenderer _kodok;
     [SerializeField] Sprite[] _kodokSprites;
     [SerializeField] GameObject _canvas;
+    [SerializeField] UnityEvent _onFinish;
     public void IncrementTrashCounter()
     {
         if(_trashCounter >= _trashLimit) return;
@@ -23,6 +25,7 @@ public class Page10Manager : MonoBehaviour
             _showPopUp.LocalScale();
             _showPopUpBlack.Color();
             _showPopUpBlur.Color();
+            _onFinish?.Invoke();
         }
         _kolamTweener.SetEnd(new Color(1, 1, 1, _trashCounter/(float)_trashLimit)).Color();
 

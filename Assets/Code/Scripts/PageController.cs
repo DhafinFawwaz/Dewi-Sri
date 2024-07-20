@@ -19,6 +19,8 @@ public class PageController : MonoBehaviour
 
     [SerializeField] SceneTransition _sceneTransition;
     [SerializeField] int[] _delayedPages;
+    [SerializeField] int[] _minigamePages;
+    [SerializeField] ButtonUI _nextButton;
     bool _isDelayFinished;
     public void SetDelayFinished(bool isFinished)
     {
@@ -28,6 +30,7 @@ public class PageController : MonoBehaviour
     public Action<int> OnPageDelayed;
 
     [SerializeField] ImageTweener _blackTweener;
+    [SerializeField] List<GameObject> _pageCopies;
 
     void ShowBlack()
     {
@@ -54,6 +57,14 @@ public class PageController : MonoBehaviour
         // {
         //     yield return new WaitForSecondsRealtime(0.1f);
         // }
+
+        Transform[] children = new Transform[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
+            children[i] = transform.GetChild(i);
+        foreach(Transform child in children) {
+            GameObject copy = Instantiate(child.gameObject);
+            _pageCopies.Add(copy);
+        }
 
         StartCoroutine(_sceneTransition.InAnimation());
 
@@ -82,8 +93,18 @@ public class PageController : MonoBehaviour
         ChangePage(_currentPage - 1);
     }
 
-    void ChangePage(int page)
+    void ResetCurrentPage()
     {
+        GameObject copy = Instantiate(_pageCopies[_currentPage], transform);
+        Destroy(transform.GetChild(_currentPage).gameObject);
+        copy.transform.SetSiblingIndex(_currentPage+1);
+    }
+
+    void ChangePage(int page)
+    {   
+        if(!_delayedPages.Contains(_currentPage)) ResetCurrentPage();
+    
+
         if(page >= _pageAmount) {
             OnNextInLastPage?.Invoke();
             return;
@@ -96,6 +117,12 @@ public class PageController : MonoBehaviour
             return;
         }
         ImmediateToPage(page);
+
+        if(_minigamePages.Contains(page)) {
+            _nextButton.SetInteractableImmediete(false);
+        } else {
+            _nextButton.SetInteractableImmediete(true);
+        }
     }
 
     void ImmediateToPage(int page)
@@ -129,4 +156,18 @@ public class PageController : MonoBehaviour
         transform.GetChild(_currentPage).gameObject.SetActive(true);
     }
 
+
+#if UNITY_EDITOR
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            NextPage();
+        }
+        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            PreviousPage();
+        }
+    }
+#endif
 }

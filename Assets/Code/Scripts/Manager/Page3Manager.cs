@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -17,6 +15,7 @@ public class Page3Manager : MonoBehaviour
     [SerializeField] GameObject[] _sayurAsem;
     [SerializeField] GameObject[] _tahuTempe;
     [SerializeField] GameObject _clickable;
+    [SerializeField] UnityEvent _onFinish;
 
     int _state = 0;
     public void NextState()
@@ -68,11 +67,12 @@ public class Page3Manager : MonoBehaviour
         _expresi[_idx].SetActive(true);
     }
 
+    [SerializeField] float _one = 0.6f;
     IEnumerator Tap1Animation()
     {
         _clickable.SetActive(false);
         SetExpresi(1);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
         _clickable.SetActive(true);
@@ -82,9 +82,9 @@ public class Page3Manager : MonoBehaviour
     {
         _clickable.SetActive(false);
         SetExpresi(1);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(_one);
         SetExpresi(2);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
         _clickable.SetActive(true);
@@ -94,7 +94,7 @@ public class Page3Manager : MonoBehaviour
     {
         _clickable.SetActive(false);
         SetExpresi(1);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(_one);
         SetExpresi(3);
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
@@ -102,7 +102,7 @@ public class Page3Manager : MonoBehaviour
         SetExpresi(3);
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
         _clickable.SetActive(true);
@@ -118,10 +118,12 @@ public class Page3Manager : MonoBehaviour
         SetExpresi(3);
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
         _clickable.SetActive(true);
+
+        _onFinish?.Invoke();
     }
 
 }

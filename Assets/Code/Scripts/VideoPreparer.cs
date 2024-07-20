@@ -37,7 +37,6 @@ public class VideoPreparer : MonoBehaviour
     }
 
 
-    bool _firstTime = true;
     IEnumerator Prepare()
     {
         _inputBlocker.SetActive(true);
