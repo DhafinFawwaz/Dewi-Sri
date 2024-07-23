@@ -11,6 +11,7 @@ enum SpriteFitMode
     None,
     FitWidth,
     FitHeight,
+    Cover
 }
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -109,6 +110,16 @@ public class AchoredSpriteRenderer : MonoBehaviour
         {
             transform.localScale = Vector2.one;
             float scale = _mainCam.orthographicSize * 2 / _spriteRenderer.bounds.size.y;
+            transform.localScale = new Vector3(scale, scale, 1);
+        }
+        else if(_fitMode == SpriteFitMode.Cover)
+        {
+            transform.localScale = Vector2.one;
+            float scale = _mainCam.orthographicSize * 2 * _mainCam.aspect / _spriteRenderer.bounds.size.x;
+            if(scale * _spriteRenderer.bounds.size.y < _mainCam.orthographicSize * 2)
+            {
+                scale = _mainCam.orthographicSize * 2 / _spriteRenderer.bounds.size.y;
+            }
             transform.localScale = new Vector3(scale, scale, 1);
         }
     }

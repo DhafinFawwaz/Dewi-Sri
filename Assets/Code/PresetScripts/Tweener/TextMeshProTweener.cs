@@ -77,6 +77,12 @@ namespace DhafinFawwaz.Tweener
         {
             return a + (int)((b - a) * t);
         }
+
+        [ContextMenu("Set To Max Visible Characters")]
+        public void SetToMaxVisibleCharacters()
+        {
+            _target.maxVisibleCharacters = _target.text.Length;
+        }
     }
 
 }

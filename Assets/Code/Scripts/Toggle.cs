@@ -11,7 +11,7 @@ public class Toggle : MonoBehaviour
     bool _isOn = true;
     void Awake()
     {
-        _isOn = PlayerPrefs.GetInt("Hint", 1) == 1 ? true : false;
+        _isOn = PlayerPrefs.GetInt("Hint", 0) == 1 ? true : false;
         float onTemp = _onTween.Duration;
         float offTemp = _offTween.Duration;
         if(_isOn) _onTween.LocalPosition();

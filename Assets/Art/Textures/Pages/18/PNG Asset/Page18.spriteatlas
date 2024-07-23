@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page18
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: f5f44dad375be9e45a5ea614bbb97f83, type: 3}
+    - {fileID: 2800000, guid: 488da9709625b7e478edf3ab26918d74, type: 3}
+    - {fileID: 2800000, guid: 93250b5e0b3bd934a9469a9aaef376f7, type: 3}
+    - {fileID: 2800000, guid: 92a75c065b1c0d641b50b9d032b6727a, type: 3}
+    - {fileID: 2800000, guid: e8eb6e851e8432245b84bc5ca3ee93f1, type: 3}
+    - {fileID: 2800000, guid: a6303070facc05947b493b3bcb931063, type: 3}
+    - {fileID: 2800000, guid: e1c1256619da2e04397f1a33d5545e6a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a6303070facc05947b493b3bcb931063, type: 3}
+  - {fileID: 21300000, guid: 488da9709625b7e478edf3ab26918d74, type: 3}
+  - {fileID: 21300000, guid: e8eb6e851e8432245b84bc5ca3ee93f1, type: 3}
+  - {fileID: 21300000, guid: 92a75c065b1c0d641b50b9d032b6727a, type: 3}
+  - {fileID: 21300000, guid: e1c1256619da2e04397f1a33d5545e6a, type: 3}
+  - {fileID: 21300000, guid: f5f44dad375be9e45a5ea614bbb97f83, type: 3}
+  - {fileID: 21300000, guid: 93250b5e0b3bd934a9469a9aaef376f7, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page18_0005_Rumput-Goa-2
+  - Page18_0001_Foreground-Patung
+  - Page18_0004_Ground-+-Patung
+  - Page18_0003_Rumput-Goa
+  - Page18_0006_Air
+  - Page18_0000_Layer-Gelap-(Multiply)
+  - Page18_0002_Asri-&-Kerbau
+  m_RenderDataMap: {}
+  m_Tag: Page18
+  m_IsVariant: 0

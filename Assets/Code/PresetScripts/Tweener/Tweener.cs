@@ -31,7 +31,7 @@ namespace DhafinFawwaz.Tweener
         public float Duration {get => _duration; set => _duration = value;}
         [SerializeField] Ease.Type _easeType = Ease.Type.Out;
         [SerializeField] Ease.Power _easePower = Ease.Power.Quart;
-        Ease.Function _easeFunction;
+        Ease.Function _easeFunction = Ease.OutQuart;
         
         
         void Awake()
@@ -78,8 +78,8 @@ namespace DhafinFawwaz.Tweener
         protected IEnumerator Tween<T>(Action<T> action, T start, T end, float duration, Func<T, T, float, T> lerpFunction)
         {
             StopOthers();
-#if UNITY_EDITOR
             _easeFunction = Ease.GetEase(_easeType, _easePower);
+#if UNITY_EDITOR
             if(!Application.isPlaying)
             {
                 StartTween(action, start, end, duration, lerpFunction);

@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using DhafinFawwaz.Tweener;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,6 +9,13 @@ using UnityEngine.Video;
 
 public class PageController : MonoBehaviour
 {
+    static int _pageFromIndex = -1;
+    public static void SetStartingPage(int index)
+    {
+        _pageFromIndex = index;
+    }
+
+
     int _currentPage = -1;
     int _pageAmount = 0;
 
@@ -63,24 +69,37 @@ public class PageController : MonoBehaviour
             children[i] = transform.GetChild(i);
         foreach(Transform child in children) {
             GameObject copy = Instantiate(child.gameObject);
+            copy.SetActive(false);
             _pageCopies.Add(copy);
         }
 
+        yield return new WaitForSeconds(0.5f);
+
         StartCoroutine(_sceneTransition.InAnimation());
 
-        for (int i = _pageAmount-1; i >= 0; i--)
+
+        if(_pageFromIndex != -1)
         {
-            if(transform.GetChild(i).gameObject.activeInHierarchy)
+            transform.GetChild(_pageFromIndex).gameObject.SetActive(true);
+            _currentPage = _pageFromIndex;
+            _pageFromIndex = -1;
+        } 
+        else
+        {
+            for (int i = _pageAmount-1; i >= 0; i--)
             {
-                _currentPage = i;
-                break;
+                if(transform.GetChild(i).gameObject.activeInHierarchy)
+                {
+                    _currentPage = i;
+                    break;
+                }
             }
-        }
-        if(_currentPage == -1)
-        {
-            _currentPage = 0;
-            transform.GetChild(_currentPage).gameObject.SetActive(true);
-        }
+            if(_currentPage == -1)
+            {
+                _currentPage = 0;
+                transform.GetChild(_currentPage).gameObject.SetActive(true);
+            }
+        } 
         yield return null;
     }
 
@@ -100,9 +119,9 @@ public class PageController : MonoBehaviour
         copy.transform.SetSiblingIndex(_currentPage+1);
     }
 
-    void ChangePage(int page)
+    public void ChangePage(int page)
     {   
-        if(!_delayedPages.Contains(_currentPage)) ResetCurrentPage();
+        if(!_delayedPages.Contains(_currentPage) && _currentPage != 0) ResetCurrentPage();
     
 
         if(page >= _pageAmount) {

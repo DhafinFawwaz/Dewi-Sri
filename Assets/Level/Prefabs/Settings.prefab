@@ -752,8 +752,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6965803010893005741}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.9272397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -765,7 +765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1072.7837, y: -574.34467}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!223 &6965803010893005777
@@ -785,6 +785,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 100
@@ -1153,18 +1154,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a61854bad0f4945ae2614d44b55472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicSlider: {fileID: 7054293743821766154}
-  _soundSlider: {fileID: 3413309056134554112}
+  _musicSlider: {fileID: 3413309056134554112}
+  _soundSlider: {fileID: 7054293743821766154}
   _resolutionDropdown: {fileID: 0}
   _fullscreenToggle: {fileID: 0}
   _musicToggle:
-  - {fileID: 21300000, guid: 6291626b288b91943a808d6340789392, type: 3}
-  - {fileID: 21300000, guid: 9ca85126232abd041a872a75cdd33ced, type: 3}
-  _soundToggle:
   - {fileID: 21300000, guid: c4746e2b0bd15f14b9c1aa031a0c7a6f, type: 3}
   - {fileID: 21300000, guid: 98d01da78dcf36741b19f92c6cb4a433, type: 3}
-  _musicImage: {fileID: 7088316726184019203}
-  _soundImage: {fileID: 7088316726855506101}
+  _soundToggle:
+  - {fileID: 21300000, guid: 6291626b288b91943a808d6340789392, type: 3}
+  - {fileID: 21300000, guid: 9ca85126232abd041a872a75cdd33ced, type: 3}
+  _musicImage: {fileID: 7088316726855506101}
+  _soundImage: {fileID: 7088316726184019203}
 --- !u!1 &6965803011723522446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,8 +1490,8 @@ RectTransform:
   m_Children:
   - {fileID: 7088316725986899696}
   - {fileID: 7088316725960287799}
-  - {fileID: 7088316726874729887}
   - {fileID: 7088316726472208425}
+  - {fileID: 7088316726874729887}
   - {fileID: 7054293743821766153}
   - {fileID: 3413309056134554115}
   - {fileID: 6965803012608592591}
@@ -2011,9 +2012,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6965803011908042345}
     m_Modifications:
+    - target: {fileID: 5673234020028056871, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
+      propertyPath: _max
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5761513969764875342, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969764875342, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2021,11 +2026,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969764875342, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969949186241, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969949186241, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2033,7 +2038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5761513970369826780, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_Name
-      value: '[SliderUI] MusicSlider'
+      value: '[SliderUI] SoundSlider'
       objectReference: {fileID: 0}
     - target: {fileID: 5761513970369826781, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_Pivot.x
@@ -2118,6 +2123,10 @@ PrefabInstance:
     - target: {fileID: 5761513970369826781, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761513970369826782, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
+      propertyPath: m_MaxValue
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
@@ -2652,9 +2661,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6965803011908042345}
     m_Modifications:
+    - target: {fileID: 5673234020028056871, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
+      propertyPath: _max
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5761513969764875342, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969764875342, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2662,11 +2675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969764875342, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969949186241, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5761513969949186241, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2674,7 +2687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5761513970369826780, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_Name
-      value: '[SliderUI] SoundSlider'
+      value: '[SliderUI] MusicSlider'
       objectReference: {fileID: 0}
     - target: {fileID: 5761513970369826781, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
       propertyPath: m_Pivot.x
@@ -2760,6 +2773,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5761513970369826782, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
+      propertyPath: m_MaxValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 407feaccfe87799478916a63e9a7b479, type: 3}
 --- !u!114 &3413309056134554112 stripped
@@ -2804,10 +2821,10 @@ PrefabInstance:
     - target: {fileID: 213149601902753606, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9ca85126232abd041a872a75cdd33ced, type: 3}
+      objectReference: {fileID: 21300000, guid: 6291626b288b91943a808d6340789392, type: 3}
     - target: {fileID: 213149602786222041, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_Name
-      value: '[ButtonUI] MusicToggle'
+      value: '[ButtonUI] SoundToggle'
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222041, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_IsActive
@@ -2823,7 +2840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222042, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222042, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3035,10 +3052,10 @@ PrefabInstance:
     - target: {fileID: 213149601902753606, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 98d01da78dcf36741b19f92c6cb4a433, type: 3}
+      objectReference: {fileID: 21300000, guid: c4746e2b0bd15f14b9c1aa031a0c7a6f, type: 3}
     - target: {fileID: 213149602786222041, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_Name
-      value: '[ButtonUI] SoundToggle'
+      value: '[ButtonUI] MusicToggle'
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222041, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_IsActive
@@ -3054,7 +3071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222042, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222042, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_AnchorMax.x

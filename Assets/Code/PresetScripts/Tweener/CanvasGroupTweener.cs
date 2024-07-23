@@ -14,6 +14,12 @@ namespace DhafinFawwaz.Tweener
             foreach (var c in _coroutines) StopCoroutineIfNotNull(c);
         }
 
+        public CanvasGroupTweener SetEnd(float end)
+        {
+            _end = end;
+            return this;
+        }
+
         [ContextMenu("Play Alpha")]
         public void Alpha()
         {

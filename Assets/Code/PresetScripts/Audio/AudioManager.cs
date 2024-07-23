@@ -26,11 +26,11 @@ public class AudioManager : MonoBehaviour
     }
     public float GetMusicVolume()
     {
-        return PlayerPrefs.GetFloat("musicVolume", (float)3/5);
+        return PlayerPrefs.GetFloat("musicVolume", (float)2/5);
     }
     public float GetSoundVolume()
     {
-        return PlayerPrefs.GetFloat("soundVolume", (float)3/5);
+        return PlayerPrefs.GetFloat("soundVolume", (float)2/5);
     }
 
     public AudioClip GetCurrentMusicClip()

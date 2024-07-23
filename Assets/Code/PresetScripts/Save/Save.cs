@@ -59,6 +59,12 @@ public static class Save
     /// Save file path for Android.
     /// </summary>
     public static readonly string Path = "data/data/" + Application.identifier.ToString() + "/files/"+_fileName + _fileFormat;
+#else
+    /// <summary>
+    /// Save file path for other platforms.
+    /// </summary>
+    public static readonly string Path = Application.persistentDataPath + "/" +_fileName + _fileFormat;
+
 #endif
 
     /// <summary>
@@ -120,6 +126,11 @@ public static class Save
     /// Path for unencrypted save data.
     /// </summary>
     public static readonly string UnencryptedPath = "data/data/" + Application.identifier.ToString() + "/files/Unencrypted_"+_fileName + ".txt";
+#else
+    /// <summary>
+    /// Path for unencrypted save data.
+    /// </summary>
+    public static readonly string UnencryptedPath = Application.persistentDataPath + "/Unencrypted_" +_fileName + ".txt";
 #endif    
     
 

@@ -12,6 +12,8 @@ public static class ResolutionManager
     static Resolution[] _resolutions = new Resolution[1];  
 #elif UNITY_ANDROID
     static Resolution[] _resolutions = new Resolution[6]; // For some reason, Screen.resolitions won't return the available resolutions for some android devices. So this has to be done.
+#else
+    static Resolution[] _resolutions = new Resolution[6]; // For some reason, Screen.resolitions won't return the available resolutions for some android devices. So this has to be done.
 #endif   
     public static void Initialize()
     {
@@ -25,6 +27,12 @@ public static class ResolutionManager
             _resolutions[i].width = Display.main.systemWidth*(i+1)/1;
         }
 #elif UNITY_ANDROID
+        for(int i = 0; i < 6; i++)
+        {
+            _resolutions[i].height = Display.main.systemHeight*(i+1)/6;
+            _resolutions[i].width = Display.main.systemWidth*(i+1)/6;
+        }
+#else
         for(int i = 0; i < 6; i++)
         {
             _resolutions[i].height = Display.main.systemHeight*(i+1)/6;
@@ -65,9 +73,9 @@ public static class ResolutionManager
     public static void SetResolution(int resolutionIndex)
     {
         if(_resolutions == null) return;
-        Resolution resolution = _resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        PlayerPrefs.SetInt("Resolution", resolutionIndex);
+        // Resolution resolution = _resolutions[resolutionIndex];
+        // Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        // PlayerPrefs.SetInt("Resolution", resolutionIndex);
     }
 
     public static Resolution[] GetResolutions() => _resolutions;

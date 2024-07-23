@@ -125,9 +125,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Page-02_0001_Asap-Ngebul-(Gerak)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 127
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e695876edb820746886ad6898f888e1
+      internalID: 1875343218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Page-02_0001_Asap-Ngebul-(Gerak)_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 152
+        width: 119
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01abf8f3b89959c4e81fe14217f8962b
+      internalID: -83927380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Page-02_0001_Asap-Ngebul-(Gerak)_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 0
+        width: 163
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6012bfc45f175d24495a1f67d21a90b2
+      internalID: -700101694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Page-02_0001_Asap-Ngebul-(Gerak)_3
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 105
+        width: 86
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5a1792f1594c74c9db445f6faeff28
+      internalID: -262879565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Page-02_0001_Asap-Ngebul-(Gerak)_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 0
+        width: 122
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6d6baec4c97ca468918c540c7b6f36
+      internalID: -1696545556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +255,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Page-02_0001_Asap-Ngebul-(Gerak)_0: 1875343218
+      Page-02_0001_Asap-Ngebul-(Gerak)_1: -83927380
+      Page-02_0001_Asap-Ngebul-(Gerak)_2: -700101694
+      Page-02_0001_Asap-Ngebul-(Gerak)_3: -262879565
+      Page-02_0001_Asap-Ngebul-(Gerak)_4: -1696545556
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
