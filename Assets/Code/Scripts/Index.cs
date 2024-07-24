@@ -11,7 +11,7 @@ public class Index : MonoBehaviour
     [SerializeField] float _delay = 0.2f;
     [SerializeField] Sprite[] _images;
     [SerializeField] CanvasGroupTweener _canvasGroupTweener;
-    [SerializeField] SceneTransition _sceneTransition;
+    [SerializeField] protected SceneTransition _sceneTransition;
     [SerializeField] PageController _pageController;
 
     public void Show()
@@ -64,7 +64,7 @@ public class Index : MonoBehaviour
     }
 
     [SerializeField] string _sceneName = "Game";
-    void LoadPage(int page)
+    protected virtual void LoadPage(int page)
     {
         PageController.SetStartingPage(page);
         _sceneTransition.StartSceneTransition(_sceneName);

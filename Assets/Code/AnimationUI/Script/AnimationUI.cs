@@ -24,7 +24,12 @@ public class AnimationUI : MonoBehaviour
 #endif
         if(PlayOnStart)StartCoroutine(PlayAnimation());
     }
-    public void Play() => StartCoroutine(PlayAnimation());
+
+    Coroutine _coroutine;
+    public void Play() {
+        if(_coroutine != null) StopCoroutine(_coroutine);
+        _coroutine = StartCoroutine(PlayAnimation());
+    }
     public void PlayReversed() => StartCoroutine(PlayReversedAnimation());
     IEnumerator PlayAnimation()
     {

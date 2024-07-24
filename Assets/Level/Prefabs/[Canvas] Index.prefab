@@ -60,7 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 5650360505828936006}
   - component: {fileID: 5650360505828936013}
   - component: {fileID: 5650360505828936012}
-  - component: {fileID: 5650360505828936002}
+  - component: {fileID: 8454165390902791866}
   m_Layer: 5
   m_Name: '[Canvas] Index'
   m_TagString: Untagged
@@ -278,7 +278,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5650360505828936007}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   _easePower: 3
   _target: {fileID: 5650360505828936013}
   _end: 0
---- !u!114 &5650360505828936002
+--- !u!114 &8454165390902791866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5650360505828936007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a2c8116f9aa524e81e9a80b36046c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 88897e5cbb5580f4d94cb8db40989544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonParent: {fileID: 5650360505059837341}
@@ -360,6 +360,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3ff599e6f987535408f34072d00614bc, type: 3}
+    - target: {fileID: 213149601902753606, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 213149602786222041, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: m_Name
       value: '[ButtonUI] Prev (1)'
@@ -511,11 +515,11 @@ PrefabInstance:
     - target: {fileID: 213149602786222043, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8454165390902791866}
     - target: {fileID: 213149602786222043, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 5650360505828936002}
+      objectReference: {fileID: 0}
     - target: {fileID: 213149602786222043, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
@@ -526,7 +530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222043, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: PreviousPage
+      value: Hide
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222043, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
@@ -534,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222043, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: PageController, Assembly-CSharp
+      value: Index, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 213149602786222043, guid: 8b163fc399643414aa2fc7a227e14cc9, type: 3}
       propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName

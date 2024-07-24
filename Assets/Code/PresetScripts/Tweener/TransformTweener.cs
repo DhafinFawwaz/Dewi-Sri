@@ -58,11 +58,11 @@ namespace DhafinFawwaz.Tweener
         {
             StopCoroutineIfNotNull(_coroutines[1]);
             _coroutines[1] = TweenIfActive(
-                x => _target.eulerAngles = x,
+                x => _target.rotation = Quaternion.Euler(x),
                 _target.eulerAngles,
                 _end,
                 _duration,
-                Vector3.LerpUnclamped
+                Vector3.SlerpUnclamped
             );
         }
 

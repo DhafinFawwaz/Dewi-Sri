@@ -76,11 +76,19 @@ SpriteAtlas:
     - {fileID: 2800000, guid: c92d375b2d6c88c49b7149a133d784fc, type: 3}
     - {fileID: 2800000, guid: 7376113b4d843fd4b888ff57955629df, type: 3}
     - {fileID: 2800000, guid: e1a2145cd971b214da9867625cb45de8, type: 3}
+    - {fileID: 2800000, guid: 00fce2049ee90184c81907cb7b2a82f1, type: 3}
+    - {fileID: 2800000, guid: 6cea13cd0e520ea459d833d4aea2fe35, type: 3}
+    - {fileID: 2800000, guid: 9653a346ff2bdb14c92e6851cebc0544, type: 3}
+    - {fileID: 2800000, guid: e9b9b22d636c4ea4a818d7688fbd9f34, type: 3}
+    - {fileID: 2800000, guid: 7b3f4810ab31ea54bbfeea30e7d38481, type: 3}
+    - {fileID: 2800000, guid: 487c82b7028bf4a4c8839e34cf909cdb, type: 3}
+    - {fileID: 2800000, guid: c91d69d68631f084fbbc1e6946dd3e9e, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 7b3f4810ab31ea54bbfeea30e7d38481, type: 3}
   - {fileID: 21300000, guid: 90282c116a72506489f2936f8b03d11e, type: 3}
   - {fileID: 21300000, guid: 926aff6231f3ee2469225284f94b16ef, type: 3}
   - {fileID: 21300000, guid: 26bd0fb23caf16449a57b53e16461fab, type: 3}
@@ -88,14 +96,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9460d073e36ff90419a61ede734daf52, type: 3}
   - {fileID: 21300000, guid: 53f9cd734a2487f49bd544d7ba7f1149, type: 3}
   - {fileID: 21300000, guid: df4687e3e8ddff3458f2b0daebf3ba44, type: 3}
+  - {fileID: 21300000, guid: 00fce2049ee90184c81907cb7b2a82f1, type: 3}
   - {fileID: 21300000, guid: e14f2524299a2444bbe432d8da1d0ea5, type: 3}
   - {fileID: 21300000, guid: 3e49716432b39974bbf7110a0ef2bd4c, type: 3}
   - {fileID: 21300000, guid: 268e8195af6f894499b8324a3ec19d98, type: 3}
   - {fileID: 21300000, guid: 668c7e265095d1f4d875dcc20c9a8368, type: 3}
+  - {fileID: 21300000, guid: 9653a346ff2bdb14c92e6851cebc0544, type: 3}
   - {fileID: 21300000, guid: 9af67d7600c4cb94da73d9a7e5cc12c9, type: 3}
   - {fileID: 21300000, guid: 6f382986cdb392c409fcc4c7a07dcd42, type: 3}
+  - {fileID: 21300000, guid: c91d69d68631f084fbbc1e6946dd3e9e, type: 3}
   - {fileID: 21300000, guid: e33048e66c3eb344aa2c4c84903aa449, type: 3}
   - {fileID: 21300000, guid: 329034f6b09a4734f84a9bace65459ff, type: 3}
+  - {fileID: 21300000, guid: 487c82b7028bf4a4c8839e34cf909cdb, type: 3}
   - {fileID: 21300000, guid: 8ab663b7413560f46b8d803ccd4779b4, type: 3}
   - {fileID: 21300000, guid: d29da3b7c49e3a84ba429ac26a37326f, type: 3}
   - {fileID: 21300000, guid: 6f5945c714021e34d97518761af21193, type: 3}
@@ -105,8 +117,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5c36a67b1c389854b802aaa6b1aa9b19, type: 3}
   - {fileID: 21300000, guid: e1a2145cd971b214da9867625cb45de8, type: 3}
   - {fileID: 21300000, guid: 91dc9edcfff10cb408ede33a8be35a83, type: 3}
+  - {fileID: 21300000, guid: e9b9b22d636c4ea4a818d7688fbd9f34, type: 3}
   - {fileID: 21300000, guid: 13535a3db6fb94a4f9f777986fd0874b, type: 3}
   - {fileID: 21300000, guid: 2c10f5ad26e7e9b4088b7a55f0d2c709, type: 3}
+  - {fileID: 21300000, guid: 6cea13cd0e520ea459d833d4aea2fe35, type: 3}
   - {fileID: 21300000, guid: c7ab3b2e4227d9f4abc5ff02b9205aa2, type: 3}
   - {fileID: 21300000, guid: 35b20f9eeaeb85742b9d28cef1e73346, type: 3}
   - {fileID: 21300000, guid: 7105456ff81f10a4180cc7ef00ee1ebd, type: 3}
@@ -114,6 +128,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6b4a26afa3a31fa4db39860217b9165d, type: 3}
   - {fileID: 21300000, guid: 2ad3abef86b3229409a97cbccae36e11, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Tambahan__0001s_0004_S
   - Page03_0015_Tahu-Tempe-3
   - Page03_0016_Tahu-Tempe-2
   - Page03_0010_Sambel
@@ -121,14 +136,18 @@ SpriteAtlas:
   - Page03_0013_Sayur-Asem-3
   - Page03_0006_Ikan-3
   - Page03_0007_Ikan-2
+  - Tambahan__0001s_0000_D
   - Page03_0014_Mangkuk-sayur-asem
   - Page03_0009_Layer-56
   - Page03_0023_Tas-&-Snack
   - Page03_0000_Lighting-(Vivid-Light)
+  - Tambahan__0001s_0002_W
   - Page03_0019_Kangkung
   - Page03_0005_Layer-16
+  - Tambahan__0001s_0006_I
   - Page3_0003_Ekspresi-4-Geleng
   - Page03_0008_Ikan-1
+  - Tambahan__0001s_0005_R
   - Page03_0021_Bayangan-Piring
   - Page03_0002_Nasi-3
   - Page03_0004_Nasi-1
@@ -138,8 +157,10 @@ SpriteAtlas:
   - Page03_0020_Ubi-Dan-Pisang
   - Page03_0026_Backrgound
   - Page03_0017_Tahu-Tempe-1
+  - Tambahan__0001s_0003_I
   - Page3_0004_Ekspresi-5-Geleng
   - Page3_0002_Ekspresi-3-Gasuka
+  - Tambahan__0001s_0001_E
   - Page3_0005_Nenek-+-Dapur
   - Page03_0011_Sayur-Asem-1
   - Page03_0018_Piring-Tahu-Tempe

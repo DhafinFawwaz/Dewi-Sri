@@ -16,6 +16,9 @@ public class Page3Manager : MonoBehaviour
     [SerializeField] GameObject[] _tahuTempe;
     [SerializeField] GameObject _clickable;
     [SerializeField] UnityEvent _onFinish;
+    [SerializeField] SpriteEventTrigger[] _spriteEventTrigger;
+
+    Coroutine _coroutine;
 
     int _state = 0;
     public void NextState()
@@ -45,7 +48,7 @@ public class Page3Manager : MonoBehaviour
     public void ResetState()
     {
         _state = 0;
-        _clickable.SetActive(true);
+        // _clickable.SetActive(true);
 
         for(int i = 0; i < _expresi.Length; i++) _expresi[i].SetActive(false);
         for(int i = 0; i < _nasi.Length; i++) _nasi[i].SetActive(false);
@@ -60,6 +63,15 @@ public class Page3Manager : MonoBehaviour
         _tahuTempe[0].SetActive(true);
     }
 
+    public void PlayExpresi(int _idx)
+    {
+        if(_coroutine != null) StopCoroutine(_coroutine);
+        if(_idx == 0) _coroutine = StartCoroutine(Tap1Animation());
+        else if(_idx == 1) _coroutine = StartCoroutine(Tap2Animation());
+        else if(_idx == 2) _coroutine = StartCoroutine(Tap3Animation());
+        else if(_idx == 3) _coroutine = StartCoroutine(Tap4Animation());
+    }
+
     void SetExpresi(int _idx)
     {
         for(int i = 0; i < _expresi.Length; i++)
@@ -70,29 +82,29 @@ public class Page3Manager : MonoBehaviour
     [SerializeField] float _one = 0.6f;
     IEnumerator Tap1Animation()
     {
-        _clickable.SetActive(false);
+        _clickable.SetActive(true);
         SetExpresi(1);
         yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
-        _clickable.SetActive(true);
+        _clickable.SetActive(false);
     }
 
     IEnumerator Tap2Animation()
     {
-        _clickable.SetActive(false);
+        _clickable.SetActive(true);
         SetExpresi(1);
         yield return new WaitForSeconds(_one);
         SetExpresi(2);
         yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
-        _clickable.SetActive(true);
+        _clickable.SetActive(false);
     }
 
     IEnumerator Tap3Animation()
     {
-        _clickable.SetActive(false);
+        _clickable.SetActive(true);
         SetExpresi(1);
         yield return new WaitForSeconds(_one);
         SetExpresi(3);
@@ -105,12 +117,12 @@ public class Page3Manager : MonoBehaviour
         yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
-        _clickable.SetActive(true);
+        _clickable.SetActive(false);
     }
 
     IEnumerator Tap4Animation()
     {
-        _clickable.SetActive(false);
+        _clickable.SetActive(true);
         SetExpresi(3);
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
@@ -121,9 +133,22 @@ public class Page3Manager : MonoBehaviour
         yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
-        _clickable.SetActive(true);
+        _clickable.SetActive(false);
 
-        _onFinish?.Invoke();
+        FinsishCheck();
+    }
+
+    void FinsishCheck()
+    {
+        bool isDone = true;
+        foreach(var s in _spriteEventTrigger)
+        {
+            if(!s.transform.GetChild(s.transform.childCount-1).gameObject.activeInHierarchy){
+                isDone = false;
+                break;
+            }
+        }
+        if(isDone) _onFinish?.Invoke();
     }
 
 }

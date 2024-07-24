@@ -10,6 +10,11 @@ public class Page16Manager : MonoBehaviour
     [SerializeField] UnityEvent _onFinish;
 
     bool _isFinished = false;
+    bool _isStarted = false;
+    public void StartGame()
+    {
+        _isStarted = true;
+    }
     public void ResetState()
     {
         _isFinished = false;
@@ -17,6 +22,7 @@ public class Page16Manager : MonoBehaviour
     }
     void Update()
     {
+        if(!_isStarted) return;
         if(_isFinished) return;
         if(_clickables.All(c => !c.activeInHierarchy))
         {

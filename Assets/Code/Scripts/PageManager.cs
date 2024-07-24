@@ -29,16 +29,15 @@ public class PageManager : MonoBehaviour
             _currentPage = _pageFromIndex;
             _pageFromIndex = -1;
         }
+
+        if(_isMiniGame) DisableNextButton();
     }
 
     public void ChangePage(int page)
     {
-        if(page < 0 || page >= _pageAmount)
-        {
-            SceneManager.LoadScene(_mainMenuScene);
-            return;
-        }
-        _sceneTransition.StartSceneTransition(page.ToString());
+        if(page < 0 || page > _pageAmount)
+            _sceneTransition.StartSceneTransition(_mainMenuScene);
+        else _sceneTransition.StartSceneTransition(page.ToString());
     }
 
     public void NextPage()
@@ -61,6 +60,22 @@ public class PageManager : MonoBehaviour
     {
         _blackTweener.SetEndColor(new Color(0,0,0,0)).Color();
         _blackTweener.OnceDone(() => _blackTweener.gameObject.SetActive(false));
+    }
+
+    public void GoHome()
+    {
+        _sceneTransition.StartSceneTransition(_mainMenuScene);
+    }
+
+    void DisableNextButton()
+    {
+        _nextButton.SetInteractableImmediete(false);
+    }
+
+    public void EnableNextButton()
+    {
+        _nextButton.SetInteractableImmediete(true);
+        _nextButton.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
     }
 
 

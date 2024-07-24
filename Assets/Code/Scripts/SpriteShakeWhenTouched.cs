@@ -23,7 +23,18 @@ public class SpriteShakeWhenTouched : MonoBehaviour
     {
         _start = transform.position;
         _end = _start + Vector3.right * _sideLength;
+        StartCoroutine(DelayCallback(0.2f, () => {
+            _start = transform.position;
+            _end = _start + Vector3.right * _sideLength;
+        }));
     }
+
+    IEnumerator DelayCallback(float delay, System.Action callback)
+    {
+        yield return new WaitForSeconds(delay);
+        callback();
+    }
+
     void OnMouseDown()
     {   
         if(!_enabled) return;

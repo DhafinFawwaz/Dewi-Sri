@@ -7,14 +7,18 @@ public class VideoLoader : MonoBehaviour
 {
     [SerializeField] VideoPlayer _videoPlayer;
     [SerializeField] string _video;
+    [SerializeField] float _delay = 0;
     void Start()
     {
         if(!enabled) return;
         Debug.Log("Loading video");
-        StartCoroutine(DelayCallback(1, () => {
+        transform.localScale = Vector3.one;
+        StartCoroutine(DelayCallback(_delay, () => {
             string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, _video);
             Debug.Log(videoPath);
             _videoPlayer.url = videoPath;
+            _videoPlayer.enabled = true;
+            _videoPlayer.Play();
         }));
     }
 

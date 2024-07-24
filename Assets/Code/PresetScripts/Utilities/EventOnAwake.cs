@@ -26,6 +26,12 @@ public class EventOnAwake : MonoBehaviour
         else _onEnable?.Invoke();
     }
 
+    [ContextMenu("Trigger OnEnable")]
+    public void TriggerOnEnable()
+    {
+        OnEnable();
+    }
+
     void OnEnableDelayed()
     {
         _onEnable?.Invoke();
