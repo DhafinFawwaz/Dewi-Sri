@@ -1596,8 +1596,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1013910900}
         m_TargetAssemblyTypeName: Page3Manager, Assembly-CSharp
-        m_MethodName: PlayExpresi
-        m_Mode: 3
+        m_MethodName: PlayTap4AnimationNoFinishCheck
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2082,8 +2082,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1013910900}
         m_TargetAssemblyTypeName: Page3Manager, Assembly-CSharp
-        m_MethodName: PlayExpresi
-        m_Mode: 3
+        m_MethodName: PlayTap4AnimationNoFinishCheck
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4692,8 +4692,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1013910900}
         m_TargetAssemblyTypeName: Page3Manager, Assembly-CSharp
-        m_MethodName: PlayExpresi
-        m_Mode: 3
+        m_MethodName: PlayTap4AnimationNoFinishCheck
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5130,7 +5130,7 @@ MonoBehaviour:
   _onDisable:
     m_PersistentCalls:
       m_Calls: []
-  _delay: 16.7
+  _delay: 17
 --- !u!4 &1858152396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5720841930365564959, guid: db69920cb225e2d4a863833fbb5e5d71, type: 3}

@@ -138,6 +138,28 @@ public class Page3Manager : MonoBehaviour
         FinsishCheck();
     }
 
+
+    public void PlayTap4AnimationNoFinishCheck()
+    {
+        if(_coroutine != null) StopCoroutine(_coroutine);
+        _coroutine = StartCoroutine(Tap4AnimationNoFinishCheck());
+    }
+    IEnumerator Tap4AnimationNoFinishCheck()
+    {
+        _clickable.SetActive(true);
+        SetExpresi(3);
+        yield return new WaitForSeconds(0.2f);
+        SetExpresi(4);
+        yield return new WaitForSeconds(0.2f);
+        SetExpresi(3);
+        yield return new WaitForSeconds(0.2f);
+        SetExpresi(4);
+        yield return new WaitForSeconds(_one);
+        SetExpresi(0);
+        yield return new WaitForSeconds(0.3f);
+        _clickable.SetActive(false);
+    }
+
     void FinsishCheck()
     {
         bool isDone = true;
