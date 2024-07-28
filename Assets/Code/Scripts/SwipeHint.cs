@@ -57,7 +57,6 @@ public class SwipeHint : MonoBehaviour
         if(_isSwiping) {
             Vector3 endMousePos = Input.mousePosition;
             float distance = Vector3.Distance(_startMousePos, endMousePos);
-            Debug.Log(distance);
             if(distance > _minDistance) {
                 _onSwipe?.Invoke();
                 _isSwiping = false;

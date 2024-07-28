@@ -8,6 +8,7 @@ public class Page13Manager : MonoBehaviour
 {
     [SerializeField] SpriteAnimator _babiAnimator;
     [SerializeField] GameObject[] _state;
+    [SerializeField] UnityEvent _onSuap;
     int _stateIndex = 0;
 
 
@@ -25,6 +26,7 @@ public class Page13Manager : MonoBehaviour
     public void NextUbi()
     {
         _babiAnimator.Play();
+        _onSuap?.Invoke();
         _ubiList[_ubiIndex].SetActive(false);
         _ubiIndex++;
         if(_ubiIndex >= _ubiList.Length) 
@@ -42,6 +44,7 @@ public class Page13Manager : MonoBehaviour
     {
         if(_apelIndex == _apelList.Length) return;
         _babiAnimator.Play();
+        _onSuap?.Invoke();
         _apelList[_apelIndex].SetActive(false);
         _apelIndex++;
         if(_apelIndex >= _apelList.Length) return;
