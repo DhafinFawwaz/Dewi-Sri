@@ -56,11 +56,13 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 1a36a81ac8cbfa647a9b346229fcbbb3, type: 3}
     - {fileID: 2800000, guid: 598496a98df157941a35a2039487947d, type: 3}
     - {fileID: 2800000, guid: 3b4d7f7ad8636e14a86ba60abc6a97cc, type: 3}
+    - {fileID: 2800000, guid: 6c938850bd8e40c4596550146d29add5, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 6c938850bd8e40c4596550146d29add5, type: 3}
   - {fileID: 21300000, guid: fe39fe321398d204f875f86d74bb6b8f, type: 3}
   - {fileID: 21300000, guid: 072ada56221036e4cacdce204ede36dc, type: 3}
   - {fileID: 21300000, guid: f19a9c88aa2de244eac56e7a39de395e, type: 3}
@@ -74,6 +76,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 93b734aea0407354fabb05108f400d7c, type: 3}
   - {fileID: 21300000, guid: ab1570ee989f7444e9240343fe16d199, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Tambahan_Multiply
   - Page15_0005_Tolong!!!
   - Page15_0011_Background
   - Page15_0004_Efek-kerbau-cemas

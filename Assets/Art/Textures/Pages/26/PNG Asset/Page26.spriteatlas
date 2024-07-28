@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Page26
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 978684be8ae07e347b5189a702a5dc53, type: 3}
+    - {fileID: 2800000, guid: 7804f52043d5fb945a8dfed793063511, type: 3}
+    - {fileID: 2800000, guid: 3b97f3b4cb2cc084bb0deb78cde2c82d, type: 3}
+    - {fileID: 2800000, guid: 57e3897e26e8aee44b5d56fbcae89547, type: 3}
+    - {fileID: 2800000, guid: 5c8f48c5312c4cd46b697af23a28cff5, type: 3}
+    - {fileID: 2800000, guid: cc8418022f449f64d9462f1003e1ce73, type: 3}
+    - {fileID: 2800000, guid: e2bb5d0792e5db344b80072cf0aaab30, type: 3}
+    - {fileID: 2800000, guid: d27c27ee6e3690b409cf79b5b5132e48, type: 3}
+    - {fileID: 2800000, guid: cca7c146437b7aa42bf9b1b8905b7d33, type: 3}
+    - {fileID: 2800000, guid: 50ce4460e7600864d91d28d6aabc0474, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7804f52043d5fb945a8dfed793063511, type: 3}
+  - {fileID: 21300000, guid: 50ce4460e7600864d91d28d6aabc0474, type: 3}
+  - {fileID: 21300000, guid: cc8418022f449f64d9462f1003e1ce73, type: 3}
+  - {fileID: 21300000, guid: 3b97f3b4cb2cc084bb0deb78cde2c82d, type: 3}
+  - {fileID: 21300000, guid: 5c8f48c5312c4cd46b697af23a28cff5, type: 3}
+  - {fileID: 21300000, guid: cca7c146437b7aa42bf9b1b8905b7d33, type: 3}
+  - {fileID: 21300000, guid: e2bb5d0792e5db344b80072cf0aaab30, type: 3}
+  - {fileID: 21300000, guid: 57e3897e26e8aee44b5d56fbcae89547, type: 3}
+  - {fileID: 21300000, guid: 978684be8ae07e347b5189a702a5dc53, type: 3}
+  - {fileID: 21300000, guid: d27c27ee6e3690b409cf79b5b5132e48, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Page26_0000_Lighting-(Soft-Light)
+  - Page26_0008_Background
+  - Page26_0004_Meja-Makan
+  - Page26_0001_Shaddow-(Multiply)
+  - Page26_0003_Nenek
+  - Page26_0007_Tangan-kanan-Asri
+  - Page26_0005_Tangan-kiri-Asri
+  - Page26_0002_Foreground
+  - Page26_0000_Asep
+  - Page26_0006_Asri
+  m_RenderDataMap: {}
+  m_Tag: Page26
+  m_IsVariant: 0

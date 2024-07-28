@@ -10,6 +10,7 @@ namespace DhafinFawwaz.Tweener
         [SerializeField] TMP_Text _target;
         [SerializeField] long _start;
         [SerializeField] long _end;
+        [SerializeField] Color _endColor;
         [SerializeField] string _numericFormat = "N0";
         [SerializeField] string _textFormat = "{0}";
         Coroutine[] _coroutines = new Coroutine[1];
@@ -70,6 +71,19 @@ namespace DhafinFawwaz.Tweener
                 _target.text.Length,
                 _constantSpeed ? _duration*_target.text.Length : _duration,
                 LerpUnclamped
+            );
+        }
+
+        [ContextMenu("Play Color")]
+        public void Color()
+        {
+            StopCoroutineIfNotNull(_coroutines[0]);
+            _coroutines[0] = TweenIfActive(
+                x => _target.color = x,
+                _target.color,
+                _endColor,
+                _duration,
+                UnityEngine.Color.LerpUnclamped
             );
         }
 

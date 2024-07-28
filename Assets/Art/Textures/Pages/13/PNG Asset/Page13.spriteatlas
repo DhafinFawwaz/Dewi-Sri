@@ -64,6 +64,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 9caa0c73fca15b741a4add8f9682f791, type: 3}
     - {fileID: 2800000, guid: 45bb3c1b55b702a4387ac006b3fba0b2, type: 3}
     - {fileID: 2800000, guid: 8dba14c26bff88349aa81828e15e8490, type: 3}
+    - {fileID: 2800000, guid: c64077337708b504cb82930007948752, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -72,6 +73,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a0fc4950434166246a93bf93a938638b, type: 3}
   - {fileID: 21300000, guid: e47a9b72a9c35c64b9e1fdd432ae7f97, type: 3}
   - {fileID: 21300000, guid: 8dba14c26bff88349aa81828e15e8490, type: 3}
+  - {fileID: 21300000, guid: c64077337708b504cb82930007948752, type: 3}
   - {fileID: 21300000, guid: dd048153c2d02984292fdb554e6a79fe, type: 3}
   - {fileID: 21300000, guid: 9caa0c73fca15b741a4add8f9682f791, type: 3}
   - {fileID: 21300000, guid: 49eba524b5736e245b17dad2fc7b7dbe, type: 3}
@@ -93,6 +95,7 @@ SpriteAtlas:
   - Page13_0009_Ubi-2-(Kanan)
   - Page13_0005_Apel-(Kiri)
   - Page13_0019_Background
+  - Tambahan_Bayangan (add)
   - Page13_0008_Ubi-3-(Kanan)
   - Page13_0017_Babi-1-(Kunyah)
   - Page13_0006_Ubi-5-(Kanan)

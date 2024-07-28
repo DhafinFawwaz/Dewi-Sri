@@ -125,6 +125,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -3099,17 +3111,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      page-01_0002_Daun-padi-(gerak)_5: -341218623
-      page-01_0002_Daun-padi-(gerak)_4: -1275110956
-      page-01_0002_Daun-padi-(gerak)_3: 1755850931
-      page-01_0002_Daun-padi-(gerak)_1: -1461282408
-      page-01_0002_Daun-padi-(gerak)_2: -1927315802
-      page-01_0002_Daun-padi-(gerak)_7: -1514897333
-      page-01_0002_Daun-padi-(gerak)_10: 1681351524
       page-01_0002_Daun-padi-(gerak)_0: 785967571
-      page-01_0002_Daun-padi-(gerak)_9: 1571538868
+      page-01_0002_Daun-padi-(gerak)_1: -1461282408
+      page-01_0002_Daun-padi-(gerak)_10: 1681351524
+      page-01_0002_Daun-padi-(gerak)_2: -1927315802
+      page-01_0002_Daun-padi-(gerak)_3: 1755850931
+      page-01_0002_Daun-padi-(gerak)_4: -1275110956
+      page-01_0002_Daun-padi-(gerak)_5: -341218623
       page-01_0002_Daun-padi-(gerak)_6: -568981370
+      page-01_0002_Daun-padi-(gerak)_7: -1514897333
       page-01_0002_Daun-padi-(gerak)_8: 947522631
+      page-01_0002_Daun-padi-(gerak)_9: 1571538868
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

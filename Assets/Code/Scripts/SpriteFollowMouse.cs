@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpriteFollowMouse : MonoBehaviour
 {
+    [SerializeField] SpriteMask _mask;
     Camera _mainCam;
     void Awake()
     {
@@ -23,6 +24,14 @@ public class SpriteFollowMouse : MonoBehaviour
             Vector3 mousePos = _mainCam.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
             transform.position = mousePos;
+        }
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            _mask.enabled = true;
+        } else if(Input.GetMouseButtonUp(0))
+        {
+            _mask.enabled = false;
         }
     }
 }

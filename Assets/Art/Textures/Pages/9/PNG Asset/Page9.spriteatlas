@@ -53,11 +53,16 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 26d4d2172edc7ca4287a216cfd0e831c, type: 3}
     - {fileID: 2800000, guid: 0fffd301ba7e5294cacb3eaaab7fe8cf, type: 3}
     - {fileID: 2800000, guid: 75f6220790a00de47a2476d2694a027f, type: 3}
+    - {fileID: 2800000, guid: 70efb3b0dc53080438679caca904912e, type: 3}
+    - {fileID: 2800000, guid: 131eb52000f41304e979598a86be77bb, type: 3}
+    - {fileID: 2800000, guid: a2b8ceafb415942439324cf1c3122707, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 131eb52000f41304e979598a86be77bb, type: 3}
+  - {fileID: 21300000, guid: 70efb3b0dc53080438679caca904912e, type: 3}
   - {fileID: 21300000, guid: 0fffd301ba7e5294cacb3eaaab7fe8cf, type: 3}
   - {fileID: 21300000, guid: 795de7044ad007949a4aed9575746fb9, type: 3}
   - {fileID: 21300000, guid: ce2af36496f91344b96a0097c0a3ae61, type: 3}
@@ -67,7 +72,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 26d4d2172edc7ca4287a216cfd0e831c, type: 3}
   - {fileID: 21300000, guid: c259833b0905b2a479f7504676da9d22, type: 3}
   - {fileID: 21300000, guid: f85b65ad07089014ead6891b9178a2ab, type: 3}
+  - {fileID: 21300000, guid: a2b8ceafb415942439324cf1c3122707, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Tambahan_Hu-2
+  - Tambahan_Hu-1
   - Page9_0007_Sampah-tambahan
   - Page9_0004_Air-mata-(pop-up)
   - Page9_0003_Tangan-kodok-(Goyang)
@@ -77,6 +85,7 @@ SpriteAtlas:
   - Page9_0006_Badan-kodok
   - Page9_0005_mata-Kodok
   - Page9_0002_Alis-kodok
+  - Tambahan_Hu-3
   m_RenderDataMap: {}
   m_Tag: Page9
   m_IsVariant: 0

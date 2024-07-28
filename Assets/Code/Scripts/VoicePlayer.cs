@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DhafinFawwaz.Tweener;
+using UnityEngine.Events;
 
 public class VoicePlayer : MonoBehaviour
 {
     [SerializeField] VoiceTiming[] _timings;
     [SerializeField] AudioSource _source;
+    [SerializeField] UnityEvent _onMusicEnd;
+    [SerializeField] float _delayOffset = 0;
 
     void OnEnable()
     {
@@ -17,10 +20,17 @@ public class VoicePlayer : MonoBehaviour
     public void Play()
     {
         _source.Play();
+        StartCoroutine(DelayCallback(_source.clip.length+_delayOffset, () => _onMusicEnd?.Invoke()));
         foreach (var timing in _timings)
         {
             StartCoroutine(PlayText(timing));
         }
+    }
+
+    IEnumerator DelayCallback(float delay, System.Action callback)
+    {
+        yield return new WaitForSeconds(delay);
+        callback();
     }
 
     IEnumerator PlayText(VoiceTiming timing)

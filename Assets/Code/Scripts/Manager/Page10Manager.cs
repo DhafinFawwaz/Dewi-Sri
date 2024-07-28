@@ -16,21 +16,35 @@ public class Page10Manager : MonoBehaviour
     [SerializeField] Sprite[] _kodokSprites;
     [SerializeField] GameObject _canvas;
     [SerializeField] UnityEvent _onFinish;
+    [SerializeField] UnityEvent _onFinishExact;
+    [SerializeField] float _delay = 1;
     public void IncrementTrashCounter()
     {
         if(_trashCounter >= _trashLimit) return;
         _trashCounter++;
         if(_trashCounter >= _trashLimit) {
+            
+            _onFinishExact?.Invoke();
             _canvas.SetActive(true);
             _showPopUp.LocalScale();
             _showPopUpBlack.Color();
             _showPopUpBlur.Color();
-            _onFinish?.Invoke();
+            StartCoroutine(DelayCallback(_delay, () => {
+                _onFinish?.Invoke();
+            }));
         }
         _kolamTweener.SetEnd(new Color(1, 1, 1, _trashCounter/(float)_trashLimit)).Color();
 
         if(_trashCounter == 3) _kodok.sprite = _kodokSprites[1];
         else if(_trashCounter == 6) _kodok.sprite = _kodokSprites[2];
         else if(_trashCounter == _trashLimit-1) _kodok.sprite = _kodokSprites[3];
+    }
+
+
+    
+    IEnumerator DelayCallback(float delay, System.Action callback)
+    {
+        yield return new WaitForSeconds(delay);
+        callback();
     }
 }

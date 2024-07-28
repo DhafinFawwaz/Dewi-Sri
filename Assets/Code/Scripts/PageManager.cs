@@ -90,6 +90,15 @@ public class PageManager : MonoBehaviour
         {
             PreviousPage();
         }
+
+        if(Input.GetKeyDown(KeyCode.F7))
+        {
+            Time.timeScale = 5;
+        }
+        else if(Input.GetKeyUp(KeyCode.F7))
+        {
+            Time.timeScale = 1;
+        }
     }
 #endif
 }

@@ -171,6 +171,7 @@ Transform:
   - {fileID: 1627538132}
   - {fileID: 588212460}
   - {fileID: 240386450}
+  - {fileID: 710321221}
   m_Father: {fileID: 467174667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -407,7 +408,7 @@ PrefabInstance:
     - target: {fileID: 4107370648466448840, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 512bbba97f505ac4bb41271b825a0100, type: 3}
+      objectReference: {fileID: 8300000, guid: 29f7eea2531c8954da2d263c26ae82b2, type: 3}
     - target: {fileID: 4107370648466448841, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -466,7 +467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
       propertyPath: _timings.Array.data[1]._time
-      value: 11
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
       propertyPath: _timings.Array.data[0]._tweener
@@ -476,6 +477,38 @@ PrefabInstance:
       propertyPath: _timings.Array.data[1]._tweener
       value: 
       objectReference: {fileID: 588212459}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6668550469121368940}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
 --- !u!4 &240386450 stripped
@@ -815,11 +848,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 14.68
+      value: 16.86
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11.39
+      value: -11.47
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -842,12 +875,12 @@ PrefabInstance:
       value: 'Babi bilang <color=#740000>"Ikutilah air mengalir
 
         menuju goa,
-        di sanalah sumber mata
+        di sanalah sumber
 
-        air berasal. Jumpai Dewi, Sri, ia sering
+        mata air berasal. Jumpai Dewi, Sri,
 
-        beristirahat
-        di sana"</color>'
+        ia
+        sering beristirahat di sana"</color>'
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552636, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_fontColor.b
@@ -867,7 +900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552636, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_HorizontalAlignment
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
@@ -887,6 +920,90 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
   m_PrefabInstance: {fileID: 588212458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &710321220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710321221}
+  - component: {fileID: 710321222}
+  m_Layer: 0
+  m_Name: Tambahan_Bayangan (Multiply)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &710321221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710321220}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.316, y: 8.496, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 25781683}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &710321222
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710321220}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 62c2ef8e561961a4290899932975ad93, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 28496cd2a3d167a4ca78eff00a6ecbb5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 29.2, y: 16.48203}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &791774680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,13 +2270,11 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Perut kenyang hati pun senang.
 
-        Waktunya melanjutkan perjalanan
 
+        Asri bertanya pada Babi Hutan.
 
-        Sekarang,
-        kemana Asri harus
-
-        pergi?'
+        "Di
+        mana kah Dewi Sri?"'
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552636, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_fontColor.b
@@ -2890,5 +3005,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[UI]'
       objectReference: {fileID: 0}
+    - target: {fileID: 6668550468806759202, guid: a97132b402141af47b7d61fa8fd48dc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a97132b402141af47b7d61fa8fd48dc1, type: 3}
+--- !u!1 &6668550469121368940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6668550468806759202, guid: a97132b402141af47b7d61fa8fd48dc1, type: 3}
+  m_PrefabInstance: {fileID: 6668550469121368939}
+  m_PrefabAsset: {fileID: 0}

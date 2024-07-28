@@ -418,6 +418,48 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 725511435}
     m_Modifications:
+    - target: {fileID: 2588221251192738190, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _delay
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605641257399780789, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: m_text
+      value: 'telah memotong tali
+
+        perangkap pada kerbau'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454317801820425270, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 612.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739532368815167491, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739532368815167491, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739532368815167491, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 6668550469121368940}
+    - target: {fileID: 8739532368815167491, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739532368815167491, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: EnableNextButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739532368815167491, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
+      value: PageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739532368815167491, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8916084983390541656, guid: 174c07642ab32a54eae8c29357c88d68, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -628,7 +670,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1068,6 +1110,96 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &629147920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629147921}
+  - component: {fileID: 629147923}
+  - component: {fileID: 629147922}
+  m_Layer: 0
+  m_Name: Tweener (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629147921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629147920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 725511435}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629147922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629147920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8050679e8246057468f5047cac45b0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onAwake:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 629147923}
+        m_TargetAssemblyTypeName: DhafinFawwaz.Tweener.MaterialTweener, Assembly-CSharp
+        m_MethodName: Color
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  _onDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  _delay: 0
+--- !u!114 &629147923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629147920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faba202ef37d4e546ac6db78722492ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onDoneDelay: 0
+  _onTweenDone:
+    m_PersistentCalls:
+      m_Calls: []
+  _otherTweenToStop: []
+  _duration: 0
+  _easeType: 2
+  _easePower: 0
+  _target: {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
+  _property: _Color
+  _end: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &630481805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1598,7 +1730,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1964,6 +2096,8 @@ Transform:
   - {fileID: 1826579223}
   - {fileID: 155376084}
   - {fileID: 1182341634}
+  - {fileID: 1209847446}
+  - {fileID: 629147921}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2420,7 +2554,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2671,11 +2805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 14.146
+      value: 20.543
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 3.8739
+      value: 3.874
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2691,7 +2825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99723077
+      value: 0.98801386
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2703,15 +2837,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.074369594
+      value: 0.15436551
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -12.95
+      value: -10.33
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 10.26
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2723,7 +2857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552634, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 8.53
+      value: 17.76
       objectReference: {fileID: 0}
     - target: {fileID: 8337937872326552635, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
       propertyPath: m_Name
@@ -2734,6 +2868,14 @@ PrefabInstance:
       value: <size=116%><color=#1E7400>Ayo kita bantu Asri memotong tali perangkap
         pada kerbau!</color></size>
       objectReference: {fileID: 0}
+    - target: {fileID: 8337937872326552636, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
+      propertyPath: m_fontSize
+      value: 12.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337937872326552636, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12.84
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
 --- !u!114 &1098962868 stripped
@@ -2741,7 +2883,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8337937872326552637, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
   m_PrefabInstance: {fileID: 1098962867}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1822230994}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d336bfc2adf6f4da2fcc9f192b399b, type: 3}
@@ -2805,7 +2947,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2964,9 +3106,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6668550469121368940}
-        m_TargetAssemblyTypeName: PageManager, Assembly-CSharp
-        m_MethodName: EnableNextButton
+  _onExactFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1209847447}
+        m_TargetAssemblyTypeName: DhafinFawwaz.Tweener.MaterialTweener, Assembly-CSharp
+        m_MethodName: Color
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2974,20 +3119,9 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+  _finishDelay: 2
 --- !u!1001 &1204381325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3154,6 +3288,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e97acb621344894eb030017965107c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1209847445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209847446}
+  - component: {fileID: 1209847447}
+  m_Layer: 0
+  m_Name: Tweener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1209847446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209847445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 725511435}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1209847447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209847445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faba202ef37d4e546ac6db78722492ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onDoneDelay: 0
+  _onTweenDone:
+    m_PersistentCalls:
+      m_Calls: []
+  _otherTweenToStop: []
+  _duration: 1.5
+  _easeType: 2
+  _easePower: 2
+  _target: {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
+  _property: _Color
+  _end: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1264091649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3787,7 +3976,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3988,6 +4177,38 @@ PrefabInstance:
       propertyPath: _timings.Array.data[0]._tweener
       value: 
       objectReference: {fileID: 1098962868}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6668550469121368941}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
 --- !u!4 &1597229534 stripped
@@ -4154,7 +4375,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4186,6 +4407,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!1 &1822230994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8337937872326552635, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
+  m_PrefabInstance: {fileID: 1098962867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1822230995 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8337937872326552636, guid: b9eef0daec81d4e418e9b8fae1243359, type: 3}
+  m_PrefabInstance: {fileID: 1098962867}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822230994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1822230997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822230994}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76fe38d108e0c94183ecd5cd2b92e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1822230995}
+  vertexCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.47212368
+      value: 0.023562338
+      inSlope: 0.022372382
+      outSlope: 0.022372382
+      tangentMode: 0
+      weightedMode: 1
+      inWeight: 0.82017744
+      outWeight: 0.43870515
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  yCurveScaling: 50
 --- !u!1 &1826579222
 GameObject:
   m_ObjectHideFlags: 0
@@ -4340,7 +4624,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4509,7 +4793,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff9db9f3034e0be42a4a71879ecb3b4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4596,6 +4880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[UI]'
       objectReference: {fileID: 0}
+    - target: {fileID: 6668550468806759202, guid: a97132b402141af47b7d61fa8fd48dc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6809528358484829762, guid: a97132b402141af47b7d61fa8fd48dc1, type: 3}
       propertyPath: _isMiniGame
       value: 1
@@ -4613,3 +4901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a212f0ff455544f98a078e0def4e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6668550469121368941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6668550468806759202, guid: a97132b402141af47b7d61fa8fd48dc1, type: 3}
+  m_PrefabInstance: {fileID: 6668550469121368939}
+  m_PrefabAsset: {fileID: 0}

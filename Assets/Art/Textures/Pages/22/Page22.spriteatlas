@@ -45,14 +45,44 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 4a3c1a2a7f65a2f49b220b137bd37398, type: 3}
+    - {fileID: 2800000, guid: 458d54f1a05d39a4a9bd2e65688b6259, type: 3}
+    - {fileID: 2800000, guid: 992cf29165bf0c74a914ffb42426f18b, type: 3}
+    - {fileID: 2800000, guid: 4d37e5b139b3cef4b9a8db80ed7ebc26, type: 3}
+    - {fileID: 2800000, guid: 06134c99ace07054dac5631a2ea139fd, type: 3}
+    - {fileID: 2800000, guid: 78a658dbbe901604190e83771de3d7be, type: 3}
+    - {fileID: 2800000, guid: a44618ff67f2a7e4cb1e32471e90fdc5, type: 3}
+    - {fileID: 2800000, guid: 8d4cf3117cbc53544a99cb9c54cf3222, type: 3}
+    - {fileID: 2800000, guid: c976fb3aaae87164a99c99d8e34d77ac, type: 3}
+    - {fileID: 2800000, guid: e8ed281ec9e3a5a4cafbd53eb766bb56, type: 3}
+    - {fileID: 2800000, guid: 2d439ff058e978c4abcbaac6b20d3fbc, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 2d439ff058e978c4abcbaac6b20d3fbc, type: 3}
+  - {fileID: 21300000, guid: 8d4cf3117cbc53544a99cb9c54cf3222, type: 3}
+  - {fileID: 21300000, guid: 992cf29165bf0c74a914ffb42426f18b, type: 3}
+  - {fileID: 21300000, guid: 4d37e5b139b3cef4b9a8db80ed7ebc26, type: 3}
+  - {fileID: 21300000, guid: 458d54f1a05d39a4a9bd2e65688b6259, type: 3}
+  - {fileID: 21300000, guid: 06134c99ace07054dac5631a2ea139fd, type: 3}
   - {fileID: 21300000, guid: 4a3c1a2a7f65a2f49b220b137bd37398, type: 3}
+  - {fileID: 21300000, guid: c976fb3aaae87164a99c99d8e34d77ac, type: 3}
+  - {fileID: 21300000, guid: 78a658dbbe901604190e83771de3d7be, type: 3}
+  - {fileID: 21300000, guid: e8ed281ec9e3a5a4cafbd53eb766bb56, type: 3}
+  - {fileID: 21300000, guid: a44618ff67f2a7e4cb1e32471e90fdc5, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Page22_0009_Manusia-3
+  - Page22_0006_Buah-Buahan
+  - Page22_0001_Sparkle
+  - Page22_0002_Jerami-Padi
+  - Page22_0000_Lighting-(Overlay)
+  - Page22_0003_Keranjang-2
   - 22
+  - Page22_0007_Manusia-2
+  - Page22_0004_Ubi-Ungu
+  - Page22_0008_Manusia-1
+  - Page22_0005_Keranjang-1
   m_RenderDataMap: {}
   m_Tag: Page22
   m_IsVariant: 0

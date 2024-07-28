@@ -340,11 +340,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ab66be90bc813304e8716e96d3dab348, type: 3}
   - {fileID: 21300000, guid: 8db9ce4a23104d145baf8665bee55304, type: 3}
   - {fileID: 21300000, guid: 72ed279f2ec530e459e6376d6d15b3fa, type: 3}
-  - {fileID: 21300000, guid: 72ed279f2ec530e459e6376d6d15b3fa, type: 3}
+  - {fileID: 21300000, guid: 4a3c1a2a7f65a2f49b220b137bd37398, type: 3}
   - {fileID: 21300000, guid: 37fd9726bd8c9e14a9b5aa23fb267208, type: 3}
   - {fileID: 21300000, guid: 5e7dcaa3fbd017e43a6d8f55086a6e7d, type: 3}
   - {fileID: 21300000, guid: 1d09192c19096164a8aec602de91ce1c, type: 3}
-  - {fileID: 21300000, guid: 1d09192c19096164a8aec602de91ce1c, type: 3}
+  - {fileID: 21300000, guid: 3b791ee127d048549ac82c2bb868a8c7, type: 3}
   _canvasGroupTweener: {fileID: 5650360505828936012}
   _sceneTransition: {fileID: 5644601496464344134, guid: 3401eac2280b27243b5b1c5da04b2024, type: 3}
   _pageController: {fileID: 0}

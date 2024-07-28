@@ -8,6 +8,8 @@ public class Page16Manager : MonoBehaviour
 {
     [SerializeField] GameObject[] _clickables;
     [SerializeField] UnityEvent _onFinish;
+    [SerializeField] UnityEvent _onExactFinish;
+    [SerializeField] float _finishDelay = 1;
 
     bool _isFinished = false;
     bool _isStarted = false;
@@ -27,7 +29,8 @@ public class Page16Manager : MonoBehaviour
         if(_clickables.All(c => !c.activeInHierarchy))
         {
             _isFinished = true;
-            StartCoroutine(DelayCallback(0.5f, _onFinish));
+            _onExactFinish?.Invoke();
+            StartCoroutine(DelayCallback(_finishDelay, _onFinish));
         }
     }
 

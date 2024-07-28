@@ -31,8 +31,6 @@ public class Hint : MonoBehaviour
     void Refresh()
     {
         _isOn = PlayerPrefs.GetInt("Hint", 1) == 1 ? false : true;
-        Debug.Log(_isOn);
-        Debug.Log(_forcedOn);
         _hintEffect.SetActive(_isOn && _forcedOn);
     }
 

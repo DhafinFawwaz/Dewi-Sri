@@ -53,6 +53,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: a80c81ab6367bfc4592a201fe6b10bf5, type: 3}
     - {fileID: 2800000, guid: 62036860ba311004a97dea01a303f2ab, type: 3}
     - {fileID: 2800000, guid: 0ae6cdf3c1ed36f4e904111f9a6faa18, type: 3}
+    - {fileID: 2800000, guid: 4f01e208227626f46b82604ef1308927, type: 3}
+    - {fileID: 2800000, guid: abc8d56e9e6b4494e964654945099db2, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -64,9 +66,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0ae6cdf3c1ed36f4e904111f9a6faa18, type: 3}
   - {fileID: 21300000, guid: ff69afb44611466438c358d9557f94c4, type: 3}
   - {fileID: 21300000, guid: 7ef59c660d654d04982e391becdfcaa9, type: 3}
+  - {fileID: 21300000, guid: 4f01e208227626f46b82604ef1308927, type: 3}
   - {fileID: 21300000, guid: 8e92ae4962a92bf48b4aa3c90caf5e67, type: 3}
   - {fileID: 21300000, guid: 5629734b09f88a8499f2b542a0fc8711, type: 3}
   - {fileID: 21300000, guid: a80c81ab6367bfc4592a201fe6b10bf5, type: 3}
+  - {fileID: 21300000, guid: abc8d56e9e6b4494e964654945099db2, type: 3}
   m_PackedSpriteNamesToIndex:
   - Page12_0001_Asep-Ngebul-
   - Page12_0014_FOREGROUND
@@ -74,9 +78,11 @@ SpriteAtlas:
   - Page12_0015_Background
   - Page12_0005_Tanda-Seru-Kaget
   - Page12_0000_Buk!
+  - Tambahan__ Bayangan teks(Normal)
   - Page12_0004_Tanah-Galian
   - Page12_0000s_0001_Badan-Babi
   - Page12_0006_Anak
+  - Tambahan_Bayangan(add)
   m_RenderDataMap: {}
   m_Tag: Page12
   m_IsVariant: 0
