@@ -6,7 +6,6 @@ using UnityEngine;
 public class MusicLoaderWithFade : MonoBehaviour
 {
     [SerializeField] AudioClip _musicClip;
-    [SerializeField] bool _isLooping = true;
     void OnEnable() => StartCoroutine(DelayOnEnable());
 
     IEnumerator DelayOnEnable()
@@ -33,9 +32,9 @@ public class MusicLoaderWithFade : MonoBehaviour
     void ApplyFading()
     {
         Audio.MusicFadeIn(_fadeDuration);
-        StartCoroutine(DelayCallback(Audio.GetCurrentMusicClip().length-_fadeDuration, () => {
+        Singleton.Instance.StartCoroutine(DelayCallback(Audio.GetCurrentMusicClip().length-_fadeDuration, () => {
             Audio.MusicFadeOut(_fadeDuration);
-            StartCoroutine(DelayCallback(_fadeDuration, () => {
+            Singleton.Instance.StartCoroutine(DelayCallback(_fadeDuration, () => {
                 Audio.StopMusic();
                 Audio.PlayMusic(_musicClip);
                 ApplyFading();

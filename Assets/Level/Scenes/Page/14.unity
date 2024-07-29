@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 25781682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.29986766, y: 0.29986766, z: 1}
+  m_LocalScale: {x: 0.29944882, y: 0.29944882, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 861832121}
@@ -250,13 +250,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25781682}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76df0db8421e2ad4f85b1dd01286412f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enable: 1
-  _fitMode: 3
+  _fitMode: 2
   _screenPosition: {x: 0.5, y: 0.5}
   _anchorPoint: {x: 0.5, y: 0.5}
 --- !u!212 &25781687
@@ -877,7 +877,7 @@ PrefabInstance:
         menuju goa,
         di sanalah sumber
 
-        mata air berasal. Jumpai Dewi, Sri,
+        mata air berasal. Jumpai Dewi Sri,
 
         ia
         sering beristirahat di sana"</color>'
@@ -1689,8 +1689,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 1011583965}
   m_Bounds:
-    m_Center: {x: 0.6108145, y: -0.028103113, z: 0}
-    m_Extent: {x: 0.70533496, y: 0.45204997, z: 0}
+    m_Center: {x: 0.6108146, y: -0.02810216, z: 0}
+    m_Extent: {x: 0.705335, y: 0.45205, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2083,8 +2083,8 @@ MonoBehaviour:
   - {fileID: 303006447}
   - {fileID: 202991958}
   m_Bounds:
-    m_Center: {x: -0.046318054, y: -0.04197502, z: 0}
-    m_Extent: {x: 24.072702, y: 7.4327564, z: 0}
+    m_Center: {x: -0.04631996, y: -0.04197502, z: 0}
+    m_Extent: {x: 24.0727, y: 7.4327555, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2685,8 +2685,8 @@ MonoBehaviour:
   - {fileID: 1378152796}
   - {fileID: 272932581}
   m_Bounds:
-    m_Center: {x: 0.0000019073486, y: 0.09021306, z: 0}
-    m_Extent: {x: 21.275003, y: 3.3013482, z: 0}
+    m_Center: {x: 0, y: 0.0902133, z: 0}
+    m_Extent: {x: 21.275002, y: 3.3013484, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0

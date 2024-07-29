@@ -397,8 +397,8 @@ MonoBehaviour:
   - {fileID: 1844657798}
   - {fileID: 905794318}
   m_Bounds:
-    m_Center: {x: 0.13993883, y: -0.027360916, z: 0}
-    m_Extent: {x: 5.8450623, y: 7.597641, z: 0}
+    m_Center: {x: 0.13993883, y: -0.027361393, z: 0}
+    m_Extent: {x: 5.8450613, y: 7.5976405, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1068,8 +1068,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030202562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0069932938, z: 0}
-  m_LocalScale: {x: 0.29986766, y: 0.29986766, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.29944882, y: 0.29944882, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 181997433}
@@ -1106,7 +1106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enable: 1
-  _fitMode: 3
+  _fitMode: 2
   _screenPosition: {x: 0.5, y: 0}
   _anchorPoint: {x: 0.5, y: 0}
 --- !u!212 &1030202565

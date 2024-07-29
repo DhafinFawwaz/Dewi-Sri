@@ -1523,7 +1523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enable: 1
-  _fitMode: 3
+  _fitMode: 2
   _screenPosition: {x: 0.5, y: 0.5}
   _anchorPoint: {x: 0.5, y: 0.5}
 --- !u!212 &645663389

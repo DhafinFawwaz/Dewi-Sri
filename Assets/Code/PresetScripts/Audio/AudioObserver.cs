@@ -9,7 +9,7 @@ public class AudioObserver : MonoBehaviour
     {
         ButtonUI.s_onClick += ButtonOnClick;
         ButtonUI.s_onPointerEnter += ButtonEnter;
-        ButtonUI.s_onPointerDown += ButtonDown;
+        // ButtonUI.s_onPointerDown += ButtonDown;
         ButtonUI.s_onSelect += ButtonEnter;
 
         AnimationUI.OnPlaySoundByFile += _audio.PlaySound;
@@ -19,7 +19,7 @@ public class AudioObserver : MonoBehaviour
     {
         ButtonUI.s_onClick -= ButtonOnClick;
         ButtonUI.s_onPointerEnter -= ButtonEnter;
-        ButtonUI.s_onPointerDown -= ButtonDown;
+        // ButtonUI.s_onPointerDown -= ButtonDown;
         ButtonUI.s_onSelect -= ButtonEnter;
 
         AnimationUI.OnPlaySoundByFile -= _audio.PlaySound;

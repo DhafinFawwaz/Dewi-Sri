@@ -47,6 +47,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 9e8f2dd34e07a4342b4bbc15f61486ac, type: 3}
     - {fileID: 2800000, guid: 8cf2e57e9641f4f48956517b8f9b01e3, type: 3}
     - {fileID: 2800000, guid: 14142d6c77fc11c488d14e011c0916b9, type: 3}
+    - {fileID: 2800000, guid: 5df7490dc3ea9c040972b76b6fe0ede1, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -54,10 +55,12 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 9e8f2dd34e07a4342b4bbc15f61486ac, type: 3}
   - {fileID: 21300000, guid: 14142d6c77fc11c488d14e011c0916b9, type: 3}
+  - {fileID: 21300000, guid: 5df7490dc3ea9c040972b76b6fe0ede1, type: 3}
   - {fileID: 21300000, guid: 8cf2e57e9641f4f48956517b8f9b01e3, type: 3}
   m_PackedSpriteNamesToIndex:
   - Page-02_0000_FOREGROUND
   - Page-02_0004_Kursi-Nenek
+  - Page-02_0007_BACKGROUND
   - Page-02_0001_Asap-Ngebul-(Gerak)
   m_RenderDataMap: {}
   m_Tag: Page2

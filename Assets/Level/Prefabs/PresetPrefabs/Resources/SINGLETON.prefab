@@ -59,6 +59,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 100
@@ -438,6 +439,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 110
@@ -831,16 +833,16 @@ MonoBehaviour:
   _soundMixer: {fileID: 24100000, guid: bda3efd27bbbd4943ab93f9cb8f71c08, type: 2}
   _defaultSound: {fileID: 8300000, guid: 4052e2285f03ec74fa4c83e19dc82f0a, type: 3}
   SFX:
-  - Clip: {fileID: 8300000, guid: 4052e2285f03ec74fa4c83e19dc82f0a, type: 3}
+  - Clip: {fileID: 8300000, guid: 066a2804455b25c4ab0accbcb6f0b788, type: 3}
     Volume: 1
     ClipName: 
-  - Clip: {fileID: 8300000, guid: ab8e83fe1df36224f92444e31e711853, type: 3}
+  - Clip: {fileID: 8300000, guid: 066a2804455b25c4ab0accbcb6f0b788, type: 3}
     Volume: 1
     ClipName: 
-  - Clip: {fileID: 8300000, guid: 7aea22bf5a9e6e94b8c978832e9079f3, type: 3}
+  - Clip: {fileID: 8300000, guid: 066a2804455b25c4ab0accbcb6f0b788, type: 3}
     Volume: 1
     ClipName: 
-  - Clip: {fileID: 8300000, guid: d0827a5929e77b445b80e1601cc828f6, type: 3}
+  - Clip: {fileID: 8300000, guid: 066a2804455b25c4ab0accbcb6f0b788, type: 3}
     Volume: 1
     ClipName: 
   - Clip: {fileID: 8300000, guid: d0827a5929e77b445b80e1601cc828f6, type: 3}

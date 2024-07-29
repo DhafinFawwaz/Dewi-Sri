@@ -35,7 +35,7 @@ public class PageManager : MonoBehaviour
 
     public void ChangePage(int page)
     {
-        if(page < 0 || page > _pageAmount)
+        if(page <= 0 || page > _pageAmount)
             _sceneTransition.StartSceneTransition(_mainMenuScene);
         else _sceneTransition.StartSceneTransition(page.ToString());
     }

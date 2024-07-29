@@ -480,7 +480,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 531524154}
     m_Modifications:
     - target: {fileID: 4107370648466448840, guid: 917abf55a2ec9b048ba62c995ea482ce, type: 3}
       propertyPath: Loop
@@ -496,11 +496,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4107370648466448841, guid: 917abf55a2ec9b048ba62c995ea482ce, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448841, guid: 917abf55a2ec9b048ba62c995ea482ce, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.339469
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448841, guid: 917abf55a2ec9b048ba62c995ea482ce, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.339469
       objectReference: {fileID: 0}
     - target: {fileID: 4107370648466448841, guid: 917abf55a2ec9b048ba62c995ea482ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.843076
+      value: -4.79891
       objectReference: {fileID: 0}
     - target: {fileID: 4107370648466448841, guid: 917abf55a2ec9b048ba62c995ea482ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -596,7 +604,7 @@ MonoBehaviour:
   _onDisable:
     m_PersistentCalls:
       m_Calls: []
-  _delay: 26
+  _delay: 25
 --- !u!1 &217462559
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,8 +684,8 @@ MonoBehaviour:
   - {fileID: 363790950}
   - {fileID: 434241378}
   m_Bounds:
-    m_Center: {x: 0.07559991, y: 0.00074005127, z: 0}
-    m_Extent: {x: 2.5194004, y: 1.9592605, z: 0}
+    m_Center: {x: 0.075600386, y: 0.00073981285, z: 0}
+    m_Extent: {x: 2.5194006, y: 1.9592605, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -838,7 +846,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 234287159}
   m_Bounds:
-    m_Center: {x: 0.02126497, y: -0.020825267, z: 0}
+    m_Center: {x: 0.02126497, y: -0.02082479, z: 0}
     m_Extent: {x: 0.67126495, y: 0.59582496, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1095,8 +1103,8 @@ MonoBehaviour:
   - {fileID: 58167966}
   - {fileID: 1658273896}
   m_Bounds:
-    m_Center: {x: -0.026495218, y: 0.07945037, z: 0}
-    m_Extent: {x: 2.1135044, y: 2.3735104, z: 0}
+    m_Center: {x: -0.026496887, y: 0.07945037, z: 0}
+    m_Extent: {x: 2.113505, y: 2.3735101, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1453,6 +1461,38 @@ PrefabInstance:
       propertyPath: _timings.Array.data[2]._tweener
       value: 
       objectReference: {fileID: 1499127047}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6668550469121368940}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
+      propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
 --- !u!4 &531524154 stripped
@@ -1962,8 +2002,8 @@ MonoBehaviour:
   - {fileID: 1534723095}
   - {fileID: 58108008}
   m_Bounds:
-    m_Center: {x: 0.1121254, y: -0.047874212, z: 0}
-    m_Extent: {x: 10.127686, y: 3.248095, z: 0}
+    m_Center: {x: 0.11212349, y: -0.04787469, z: 0}
+    m_Extent: {x: 10.127686, y: 3.2480946, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2380,8 +2420,8 @@ MonoBehaviour:
   - {fileID: 1422509197}
   - {fileID: 1120215363}
   m_Bounds:
-    m_Center: {x: -0.03468609, y: 0.022668839, z: 0}
-    m_Extent: {x: 3.8053157, y: 2.8123298, z: 0}
+    m_Center: {x: -0.034684896, y: 0.02267003, z: 0}
+    m_Extent: {x: 3.805315, y: 2.81233, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2798,8 +2838,8 @@ MonoBehaviour:
   - {fileID: 1211868316}
   - {fileID: 578316096}
   m_Bounds:
-    m_Center: {x: -0.10847044, y: -0.04347515, z: 0}
-    m_Extent: {x: 2.9154696, y: 2.760475, z: 0}
+    m_Center: {x: -0.108469725, y: -0.043474913, z: 0}
+    m_Extent: {x: 2.9154704, y: 2.7604747, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -3044,7 +3084,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2114647233}
   m_Bounds:
-    m_Center: {x: 0.025460482, y: -0.0031356812, z: 0}
+    m_Center: {x: 0.025460005, y: -0.0031356812, z: 0}
     m_Extent: {x: 0.5229602, y: 0.8728553, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -3281,7 +3321,7 @@ MonoBehaviour:
   - {fileID: 10307206}
   m_Bounds:
     m_Center: {x: 0.061719894, y: 0.10268593, z: 0}
-    m_Extent: {x: 4.3982797, y: 3.8226867, z: 0}
+    m_Extent: {x: 4.398282, y: 3.8226864, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -3470,7 +3510,7 @@ PrefabInstance:
       objectReference: {fileID: 1499127047}
     - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
       propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4107370648466448847, guid: b18b37a2fda3ab24f876ad169cf81c86, type: 3}
       propertyPath: _onMusicEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4344,6 +4384,7 @@ GameObject:
   - component: {fileID: 1867456603}
   - component: {fileID: 1867456602}
   - component: {fileID: 1867456601}
+  - component: {fileID: 1867456604}
   m_Layer: 0
   m_Name: '[Sprite] BG'
   m_TagString: Untagged
@@ -4360,7 +4401,7 @@ Transform:
   m_GameObject: {fileID: 1867456599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.29986766, y: 0.29986766, z: 1}
+  m_LocalScale: {x: 0.29944882, y: 0.29944882, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 82562746}
@@ -4437,7 +4478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enable: 1
-  _fitMode: 3
+  _fitMode: 2
   _screenPosition: {x: 0.5, y: 0.5}
   _anchorPoint: {x: 0.5, y: 0.5}
 --- !u!212 &1867456603
@@ -4492,6 +4533,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1867456604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867456599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8050679e8246057468f5047cac45b0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onAwake:
+    m_PersistentCalls:
+      m_Calls: []
+  _onEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6668550469121368940}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _onDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  _delay: 46
 --- !u!1 &1882854205
 GameObject:
   m_ObjectHideFlags: 0

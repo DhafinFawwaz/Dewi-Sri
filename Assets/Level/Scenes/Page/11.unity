@@ -296,8 +296,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158404578}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0069932938, z: 0}
-  m_LocalScale: {x: 0.29986766, y: 0.29986766, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.29944882, y: 0.29944882, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1539001984}
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enable: 1
-  _fitMode: 3
+  _fitMode: 2
   _screenPosition: {x: 0.5, y: 0}
   _anchorPoint: {x: 0.5, y: 0}
 --- !u!212 &158404583
@@ -552,8 +552,8 @@ MonoBehaviour:
   - {fileID: 2127327145}
   - {fileID: 507677275}
   m_Bounds:
-    m_Center: {x: 0.6582235, y: -0.12792969, z: 0}
-    m_Extent: {x: 1.9567313, y: 2.4920702, z: 0}
+    m_Center: {x: 0.6582241, y: -0.12792945, z: 0}
+    m_Extent: {x: 1.9567308, y: 2.4920702, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -768,7 +768,7 @@ MonoBehaviour:
   - {fileID: 512328233}
   - {fileID: 836620487}
   m_Bounds:
-    m_Center: {x: -0.050424337, y: -0.1939385, z: 0}
+    m_Center: {x: -0.050424337, y: -0.19393945, z: 0}
     m_Extent: {x: 1.2355914, y: 2.8447917, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1301,8 +1301,8 @@ MonoBehaviour:
   - {fileID: 668257301}
   - {fileID: 476340864}
   m_Bounds:
-    m_Center: {x: 0, y: -1.0767789, z: 0}
-    m_Extent: {x: 23.455, y: 4.7882214, z: 0}
+    m_Center: {x: 0, y: -1.0767784, z: 0}
+    m_Extent: {x: 23.455002, y: 4.788223, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -2404,8 +2404,8 @@ MonoBehaviour:
   - {fileID: 1208728675}
   - {fileID: 142934011}
   m_Bounds:
-    m_Center: {x: -0.007913172, y: -0.08352876, z: 0}
-    m_Extent: {x: 0.80202794, y: 2.2395978, z: 0}
+    m_Center: {x: -0.007913113, y: -0.08352876, z: 0}
+    m_Extent: {x: 0.802028, y: 2.2395978, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -3361,8 +3361,8 @@ MonoBehaviour:
   - {fileID: 2004738234}
   - {fileID: 2112333062}
   m_Bounds:
-    m_Center: {x: 0.017942071, y: -0.19705153, z: 0}
-    m_Extent: {x: 1.8197957, y: 4.7499623, z: 0}
+    m_Center: {x: 0.017941475, y: -0.197052, z: 0}
+    m_Extent: {x: 1.8197951, y: 4.749963, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0

@@ -73,6 +73,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: e082b9bb28f113b4c81e031d6d4b4edf, type: 3}
     - {fileID: 2800000, guid: f7485e9e9b3bf5c4191811dbb43d5c64, type: 3}
     - {fileID: 2800000, guid: 6b4f9b51a23b7bc44a1a5184a5fee650, type: 3}
+    - {fileID: 2800000, guid: fcf464b74fa68f145b93d21073f54ee0, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -95,6 +96,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c6cf1a76e5ee48b46aba0cf9234690ac, type: 3}
   - {fileID: 21300000, guid: 7703d7a6ef0ec3840bf0921baeb4565f, type: 3}
   - {fileID: 21300000, guid: 1682f39736f58494ea54b5b4fc137a9c, type: 3}
+  - {fileID: 21300000, guid: fcf464b74fa68f145b93d21073f54ee0, type: 3}
   - {fileID: 21300000, guid: 8577a2d7b80e98e48bc053ad31a615dc, type: 3}
   - {fileID: 21300000, guid: 4d858e08059e16e4a8b4fe85e42cc6c4, type: 3}
   - {fileID: 21300000, guid: 0563c8f8ded11eb4dbd50312555d750e, type: 3}
@@ -125,6 +127,7 @@ SpriteAtlas:
   - Page-07_0001s_0005_Senter-(tas)
   - Page-07_0001s_0003_Hint-Botol-Minum
   - Page-07_0010_Text-Bubble
+  - Page-07_0014_Bg 1
   - Page-07_0001s_0010_Hint-Bekal
   - Page-07_0003_Bayangan-+-Bayangan
   - Page-07_0000s_0004_Item-2-(-Salah)

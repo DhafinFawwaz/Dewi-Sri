@@ -17,6 +17,8 @@ public class Page3Manager : MonoBehaviour
     [SerializeField] GameObject _clickable;
     [SerializeField] UnityEvent _onFinish;
     [SerializeField] SpriteEventTrigger[] _spriteEventTrigger;
+    [SerializeField] UnityEvent _onClickFood;
+    [SerializeField] UnityEvent _onSuap;
 
     Coroutine _coroutine;
 
@@ -83,7 +85,9 @@ public class Page3Manager : MonoBehaviour
     IEnumerator Tap1Animation()
     {
         _clickable.SetActive(true);
+        _onClickFood?.Invoke();
         SetExpresi(1);
+        _onSuap?.Invoke();
         yield return new WaitForSeconds(_one);
         SetExpresi(0);
         yield return new WaitForSeconds(0.3f);
@@ -93,7 +97,9 @@ public class Page3Manager : MonoBehaviour
     IEnumerator Tap2Animation()
     {
         _clickable.SetActive(true);
+        _onClickFood?.Invoke();
         SetExpresi(1);
+        _onSuap?.Invoke();
         yield return new WaitForSeconds(_one);
         SetExpresi(2);
         yield return new WaitForSeconds(_one);
@@ -105,7 +111,9 @@ public class Page3Manager : MonoBehaviour
     IEnumerator Tap3Animation()
     {
         _clickable.SetActive(true);
+        _onClickFood?.Invoke();
         SetExpresi(1);
+        _onSuap?.Invoke();
         yield return new WaitForSeconds(_one);
         SetExpresi(3);
         yield return new WaitForSeconds(0.2f);
@@ -123,6 +131,7 @@ public class Page3Manager : MonoBehaviour
     IEnumerator Tap4Animation()
     {
         _clickable.SetActive(true);
+        _onClickFood?.Invoke();
         SetExpresi(3);
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
