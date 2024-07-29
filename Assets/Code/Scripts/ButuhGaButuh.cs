@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DhafinFawwaz.Tweener;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ButuhGaButuh : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class ButuhGaButuh : MonoBehaviour
     [SerializeField] SpriteRenderer _spriteRenderer;
     [SerializeField] Sprite[] _sprites;
     Coroutine _coroutine;
+
+    [SerializeField] UnityEvent _onGaButuh;
     public void SetButuh()
     {
         _showTweener.LocalScale();
@@ -20,6 +23,7 @@ public class ButuhGaButuh : MonoBehaviour
         _spriteRenderer.sprite = _sprites[1];
         if(_coroutine != null) StopCoroutine(_coroutine);
         _coroutine = StartCoroutine(DelayCallback(1f, () => _spriteRenderer.sprite = _sprites[0]));
+
     }
 
     public void SetGaButuh()
@@ -31,6 +35,7 @@ public class ButuhGaButuh : MonoBehaviour
         _spriteRenderer.sprite = _sprites[2];
         if(_coroutine != null) StopCoroutine(_coroutine);
         _coroutine = StartCoroutine(DelayCallback(1f, () => _spriteRenderer.sprite = _sprites[0]));
+        _onGaButuh?.Invoke();
     }
 
     public void StopAnyRunningCoroutine()

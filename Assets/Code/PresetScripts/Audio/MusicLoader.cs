@@ -16,7 +16,10 @@ public class MusicLoader : MonoBehaviour
             yield return null;
         }
         if(_playWithSFXSource) Audio.SetMusicSourceVolumeWithSFX(0);
-        else Audio.SetMusicSourceVolume(1);
+        else {
+            // Audio.SetMusicSourceVolume(1);
+            Audio.MusicFadeIn(2f);
+        }
         if(_musicClip == Audio.GetCurrentMusicClip()) // Same music
         {
             if(_playWithSFXSource) Audio.ToggleLoopWithSFX(true);

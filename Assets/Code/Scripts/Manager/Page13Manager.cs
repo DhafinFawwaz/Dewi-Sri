@@ -12,6 +12,7 @@ public class Page13Manager : MonoBehaviour
     int _stateIndex = 0;
 
 
+    [SerializeField] UnityEvent _onGantiTangan;
     public void NextState()
     {
         _state[_stateIndex].SetActive(false);
@@ -25,6 +26,9 @@ public class Page13Manager : MonoBehaviour
 
     public void NextUbi()
     {
+        if(_ubiIndex == 0) {
+            _onGantiTangan?.Invoke();
+        }
         _babiAnimator.Play();
         _onSuap?.Invoke();
         _ubiList[_ubiIndex].SetActive(false);
@@ -42,6 +46,10 @@ public class Page13Manager : MonoBehaviour
 
     public void NextApel()
     {
+        if(_apelIndex == 0) {
+            _onGantiTangan?.Invoke();
+        }
+
         if(_apelIndex == _apelList.Length) return;
         _babiAnimator.Play();
         _onSuap?.Invoke();

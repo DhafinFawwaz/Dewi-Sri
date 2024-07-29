@@ -19,6 +19,7 @@ public class Page3Manager : MonoBehaviour
     [SerializeField] SpriteEventTrigger[] _spriteEventTrigger;
     [SerializeField] UnityEvent _onClickFood;
     [SerializeField] UnityEvent _onSuap;
+    [SerializeField] UnityEvent _onGeleng;
 
     Coroutine _coroutine;
 
@@ -116,6 +117,7 @@ public class Page3Manager : MonoBehaviour
         _onSuap?.Invoke();
         yield return new WaitForSeconds(_one);
         SetExpresi(3);
+        _onGeleng?.Invoke();
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
         yield return new WaitForSeconds(0.2f);
@@ -133,6 +135,7 @@ public class Page3Manager : MonoBehaviour
         _clickable.SetActive(true);
         _onClickFood?.Invoke();
         SetExpresi(3);
+        _onGeleng?.Invoke();
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
         yield return new WaitForSeconds(0.2f);
@@ -157,6 +160,7 @@ public class Page3Manager : MonoBehaviour
     {
         _clickable.SetActive(true);
         SetExpresi(3);
+        _onGeleng?.Invoke();
         yield return new WaitForSeconds(0.2f);
         SetExpresi(4);
         yield return new WaitForSeconds(0.2f);

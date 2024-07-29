@@ -54,7 +54,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _otherTweenToStop: []
-  _duration: 0.25
+  _duration: 1
   _easeType: 1
   _easePower: 3
   _target: {fileID: 5644601496848251279}
@@ -155,7 +155,7 @@ MonoBehaviour:
   _outDuration: 0.5
   _inDuration: 0.5
   _delayAfterOut: 0
-  _delayBeforeIn: 0.5
+  _delayBeforeIn: 0
   _tweener: {fileID: 2762438974528533453}
 --- !u!1 &5644601496848251277
 GameObject:

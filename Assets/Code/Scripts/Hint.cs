@@ -19,7 +19,14 @@ public class Hint : MonoBehaviour
     [SerializeField] GameObject _hintEffect;
     void Awake()
     {
-        _hintEffect.SetActive(false);
+        // _hintEffect.SetActive(false);
+        StartCoroutine(DelayCallback(0.1f, () => _hintEffect.SetActive(true)));
+    }
+
+    IEnumerator DelayCallback(float delay, System.Action callback)
+    {
+        yield return new WaitForSeconds(delay);
+        callback();
     }
     
     void OnEnable()

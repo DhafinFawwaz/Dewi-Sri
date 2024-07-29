@@ -23,6 +23,7 @@ public class PageManager : MonoBehaviour
     [SerializeField] ImageTweener _blackTweener;
     void Awake()
     {
+        // FadeInMusic();
         if(_pageFromIndex == -1)
             _currentPage = int.Parse(SceneManager.GetActiveScene().name);
         else {
@@ -76,6 +77,17 @@ public class PageManager : MonoBehaviour
     {
         _nextButton.SetInteractableImmediete(true);
         _nextButton.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+    }
+
+
+    public void FadeOutMusic()
+    {
+        Singleton.Instance.Audio.MusicFadeOut(0.8f);
+    }
+
+    public void FadeInMusic()
+    {
+        Singleton.Instance.Audio.MusicFadeIn(1f);
     }
 
 
