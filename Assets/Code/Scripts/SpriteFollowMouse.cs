@@ -4,34 +4,20 @@ using UnityEngine;
 
 public class SpriteFollowMouse : MonoBehaviour
 {
-    [SerializeField] SpriteMask _mask;
-    Camera _mainCam;
-    void Awake()
-    {
-        _mainCam = Camera.main;
-    }
-
+    [SerializeField] SpriteMask _mask;   
+    bool _isMouseDown = false;
     void Update()
     {
-        // Get touch position
-        if(Input.touchCount > 0)
-        {
-            Vector3 touchPos = _mainCam.ScreenToWorldPoint(Input.GetTouch(0).position);
-            touchPos.z = 0;
-            transform.position = touchPos;
-            return;
-        } else {
-            Vector3 mousePos = _mainCam.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0;
-            transform.position = mousePos;
-        }
-
-        if(Input.GetMouseButtonDown(0))
+        transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
+        if(Input.GetMouseButtonDown(0) && !_isMouseDown)
         {
             _mask.enabled = true;
-        } else if(Input.GetMouseButtonUp(0))
+            _isMouseDown = true;
+        }
+        else if(Input.GetMouseButtonUp(0) && _isMouseDown)
         {
             _mask.enabled = false;
+            _isMouseDown = false;
         }
     }
 }
